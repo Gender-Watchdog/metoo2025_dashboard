@@ -32,7 +32,7 @@ This dashboard tracks the view counts of specific DC Inside posts related to var
 
 ## Data Sources
 
-The data is sourced from DC Inside posts listed in `sources/dc_inside_post_urls.md`. The view counts are extracted from the HTML of these posts using the BeautifulSoup library in Python.
+The data is sourced from DC Inside posts listed in `sources/dc_inside_post_urls.csv`. The view counts are extracted from the HTML of these posts using the BeautifulSoup library in Python.
 
 ## GitHub Pages Deployment
 
