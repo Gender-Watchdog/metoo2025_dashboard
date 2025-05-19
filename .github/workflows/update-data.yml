@@ -28,6 +28,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add js/university_data.json sources/university_data_current.csv
+          git add js/university_data.json sources/university_data_current.csv sources/dc_inside_post_urls.csv
           git diff --quiet && git diff --staged --quiet || git commit -m "Update data"
           git push 
