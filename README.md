@@ -1,4 +1,4 @@
-# GenderWatchdog Dashboard
+# #MeTooKorea2025 Dashboard
 
 A dashboard for monitoring view counts of posts on DC Inside by university.
 
