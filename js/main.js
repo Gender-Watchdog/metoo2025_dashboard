@@ -453,4 +453,14 @@ function showError(message) {
 // Helper function to capitalize words
 function capitalizeWords(str) {
     return str ? str.replace(/\b\w/g, (match) => match.toUpperCase()) : '';
-} 
+}
+
+// Error handling for script loading
+window.onerror = function(message, source, lineno, colno, error) {
+    console.error("Error occurred: ", message, source, lineno, colno, error);
+    var errorDisplay = document.getElementById('error-display');
+    if (errorDisplay) {
+        errorDisplay.textContent = 'Error: ' + message;
+        errorDisplay.style.display = 'block';
+    }
+}; 

@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_16x16.png" sizes="16x16">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_48x48.png" sizes="48x48">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_64x64.png" sizes="64x64">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_128x128.png" sizes="128x128">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_256x256.png" sizes="256x256">
+    
     <script>
         // Add error handling for script loading
         window.onerror = function(message, source, lineno, colno, error) {
@@ -102,12 +111,40 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GenderWatchdog. All data last updated: <span id="footer-updated-date"></span></p>
+    <!-- Support & Endorsements Section with custom styling that matches the page -->
+    <div class="endorsement-section">
+        <h3><i class="fas fa-bullhorn"></i> Support & Endorsements</h3>
+        <blockquote>
+            "We are honored to receive support from End Rape On Campus (<a href='https://twitter.com/EndRapeOnCampus' target='_blank' rel='noopener'>@EndRapeOnCampus</a>) in exposing the systemic sexual violence cover-up at Dongguk University. Thank you to Kenyora Johnson and the entire team for amplifying our efforts, providing solidarity, and advising on advocacy."
+        </blockquote>
+        <footer>
+            <a href="https://x.com/Gender_Watchdog/status/1917483599189926092" target="_blank" rel="noopener">
+                View the pinned tweet
+            </a>
+        </footer>
+    </div>
+  
+    <!-- Footer with custom styling that matches the page -->
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imgs/favicons/gender_watchdog_favicon_48x48.png" alt="Gender Watchdog Logo">
+            </div>
+            <div class="footer-text">
+                <span>
+                    This project documents Dongguk University's sexual violence crisis, institutional cover-ups, and alleged misuse of public funds. Download or clone the dashboard at
+                    <a href="https://github.com/genderwatchdog1/metoo2025_dashboard" target="_blank" rel="noopener">
+                        github.com/genderwatchdog1/metoo2025_dashboard
+                    </a>.
+                </span>
+                <p>
+                    All data last updated: <span id="footer-updated-date"></span>
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js"></script>
 </body>
