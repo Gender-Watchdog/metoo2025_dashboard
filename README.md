@@ -25,7 +25,7 @@ This dashboard tracks the view counts of specific DC Inside posts related to var
 
 ## How to Use
 
-1. Visit the dashboard at https://genderwatchdog1.github.io/metoo2025_dashboard/
+1. Visit the dashboard at https://dashboard.genderwatchdog.org/
 2. Use the search box to filter universities by name
 3. Use the dropdown to sort by different metrics
 4. Click the "View on GitHub" button to visit the repository
