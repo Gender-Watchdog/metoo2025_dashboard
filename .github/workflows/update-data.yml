@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: List files for debugging
+        run: ls -lR
+      
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
