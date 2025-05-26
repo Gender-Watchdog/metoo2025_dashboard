@@ -85,21 +85,43 @@ header {
     box-shadow: var(--box-shadow);
 }
 
-header h1 {
-    font-size: 2.2rem;
+/* Header Flex Layout for Logo + Title */
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    margin-right: 8px;
+}
+
+.header-title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title-group h1 {
+    margin-bottom: 0.3rem;
+    font-size: 2.1rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
 }
 
-header h1 i {
-    margin-right: 12px;
-}
-
-header p {
-    opacity: 0.8;
-    font-size: 1.1rem;
+.header-title-group p {
+    opacity: 0.85;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    word-break: break-all;
 }
 
 /* Dashboard Controls */
@@ -466,5 +488,24 @@ footer {
     
     .footer-text {
         text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header-logo {
+        width: 38px;
+        height: 38px;
+        margin-right: 0;
+    }
+    .header-title-group h1 {
+        font-size: 1.3rem;
+    }
+    .header-title-group p {
+        font-size: 0.95rem;
     }
 } 
