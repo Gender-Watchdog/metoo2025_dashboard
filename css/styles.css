@@ -124,6 +124,16 @@ header {
     word-break: break-all;
 }
 
+.header-title-group p a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.header-title-group p a:hover {
+    color: var(--tertiary-color);
+}
+
 /* Dashboard Controls */
 .dashboard-controls {
     display: flex;
