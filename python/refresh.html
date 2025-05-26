@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refreshing Data</title>
+    <script>
+        // Run the Python script when the page loads
+        window.onload = function() {
+            // Create a script tag that executes the Python script
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'data:text/javascript;charset=utf-8,' + 
+                encodeURIComponent(`
+                    fetch('/python/run_script.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ script: 'views_counter.py' })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Script executed:', data);
+                        // Close this window/iframe after completion
+                        if (window.parent) {
+                            window.parent.postMessage('refresh_complete', '*');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error executing script:', error);
+                    });
+                `);
+            document.head.appendChild(script);
+        };
+    </script>
+</head>
+<body>
+    <h1>Refreshing data...</h1>
+    <p>This page is refreshing the university data by running the views_counter.py script.</p>
+    <p>You can close this page after the refresh is complete.</p>
+</body>
+</html> 
