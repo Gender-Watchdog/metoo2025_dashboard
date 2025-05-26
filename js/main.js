@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Change refresh button to direct to GitHub repository
     refreshBtn.addEventListener('click', () => {
-        window.open('https://github.com/YOUR_USERNAME/genderwatchdog', '_blank');
+        window.open('https://github.com/genderwatchdog1/metoo2025_dashboard', '_blank');
     });
 });
 
