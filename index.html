@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenderWatchdog - University Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        // Add error handling for script loading
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error("Error occurred: ", message, source, lineno, colno, error);
+            document.getElementById('error-display').textContent = 'Error: ' + message;
+            document.getElementById('error-display').style.display = 'block';
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-chart-line"></i> GenderWatchdog Dashboard</h1>
+            <p>Monitoring post views by university</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Add error message display area -->
+        <div id="error-display" style="display: none; color: red; background-color: #ffeeee; padding: 10px; margin-bottom: 10px; border-radius: 5px;"></div>
+
+        <section class="dashboard-controls">
+            <div class="refresh-section">
+                <button id="refresh-btn" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </button>
+                <span id="last-updated"></span>
+            </div>
+            <div class="filter-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search universities or post titles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="increase-desc">Most Views Increase</option>
+                        <option value="increase-asc">Least Views Increase</option>
+                        <option value="current-desc">Highest Current Views</option>
+                        <option value="current-asc">Lowest Current Views</option>
+                        <option value="recommend-desc">Most Recommendations</option>
+                        <option value="comment-desc">Most Comments</option>
+                        <option value="name-asc">University Name (A-Z)</option>
+                        <option value="name-desc">University Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-summary">
+            <div class="stat-card total-views">
+                <h3>Total Current Views</h3>
+                <p id="total-current-views">0</p>
+            </div>
+            <div class="stat-card total-increase">
+                <h3>Total Views Increase</h3>
+                <p id="total-increase">0</p>
+            </div>
+            <div class="stat-card avg-increase">
+                <h3>Average Views Increase</h3>
+                <p id="avg-increase">0</p>
+            </div>
+        </section>
+
+        <section class="data-visualization">
+            <div class="chart-container">
+                <canvas id="views-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="data-table">
+            <h2>University Data</h2>
+            <div class="table-container">
+                <table id="universities-table">
+                    <thead>
+                        <tr>
+                            <th>University (English)</th>
+                            <th>University (Korean)</th>
+                            <th>Initial Views</th>
+                            <th>Current Views</th>
+                            <th>Views Increase</th>
+                            <th>Recs / Comments</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr class="loading-row">
+                            <td colspan="7">Loading data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GenderWatchdog. All data last updated: <span id="footer-updated-date"></span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
