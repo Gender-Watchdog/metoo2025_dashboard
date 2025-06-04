@@ -1,0 +1,39 @@
+name: Update Dashboard Data
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Run daily at 4 AM
+  workflow_dispatch:      # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: List files for debugging
+        run: ls -lR
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Run scraper
+        run: python python/views_counter.py
+        
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add js/university_data.json sources/university_data_current.csv sources/dc_inside_post_urls.csv
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update data"
+          git push 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#MeTooKorea2025 - University Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="VDVWSPXF" defer></script>
+    <!-- / Fathom -->
+    
+    <!-- Favicons -->
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_16x16.png" sizes="16x16">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_48x48.png" sizes="48x48">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_64x64.png" sizes="64x64">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_128x128.png" sizes="128x128">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_256x256.png" sizes="256x256">
+    
+    <script>
+        // Add error handling for script loading
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error("Error occurred: ", message, source, lineno, colno, error);
+            document.getElementById('error-display').textContent = 'Error: ' + message;
+            document.getElementById('error-display').style.display = 'block';
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <img src="imgs/gender-watchdog-icon-04142025.png" alt="Gender Watchdog Icon" class="header-logo">
+            <div class="header-title-group">
+                <h1><i class="fas fa-chart-line"></i> #MeTooKorea2025 Dashboard</h1>
+                <p>Monitoring post views on <a href="https://www.dcinside.com/" target="_blank" rel="noopener">https://www.dcinside.com/</a> by university</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Add error message display area -->
+        <div id="error-display" style="display: none; color: red; background-color: #ffeeee; padding: 10px; margin-bottom: 10px; border-radius: 5px;"></div>
+
+        <section class="dashboard-controls">
+            <div class="refresh-section">
+                <button id="refresh-btn" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </button>
+                <span id="last-updated"></span>
+            </div>
+            <div class="filter-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search universities or post titles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="increase-desc">Most Views Increase</option>
+                        <option value="increase-asc">Least Views Increase</option>
+                        <option value="current-desc">Highest Current Views</option>
+                        <option value="current-asc">Lowest Current Views</option>
+                        <option value="recommend-desc">Most Recommendations</option>
+                        <option value="comment-desc">Most Comments</option>
+                        <option value="name-asc">University Name (A-Z)</option>
+                        <option value="name-desc">University Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-summary">
+            <div class="stat-card total-views">
+                <h3>Total Current Views</h3>
+                <p id="total-current-views">0</p>
+            </div>
+            <div class="stat-card total-increase">
+                <h3>Total Views Increase</h3>
+                <p id="total-increase">0</p>
+            </div>
+            <div class="stat-card avg-increase">
+                <h3>Average Views Increase</h3>
+                <p id="avg-increase">0</p>
+            </div>
+        </section>
+
+        <section class="data-visualization">
+            <div class="chart-container">
+                <canvas id="views-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="data-table">
+            <h2>University Data</h2>
+            <div class="table-container">
+                <table id="universities-table">
+                    <thead>
+                        <tr>
+                            <th>University (English)</th>
+                            <th>University (Korean)</th>
+                            <th>Initial Views</th>
+                            <th>Current Views</th>
+                            <th>Views Increase</th>
+                            <th>Recs / Comments</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr class="loading-row">
+                            <td colspan="7">Loading data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Support & Endorsements Section with custom styling that matches the page -->
+    <div class="endorsement-section">
+        <h3><i class="fas fa-bullhorn"></i> Support & Endorsements</h3>
+        <blockquote>
+            "We are honored to receive support from End Rape On Campus (@EndRapeOnCampus) in exposing the systemic sexual violence cover-up at Dongguk University. Thank you EROC for amplifying our efforts, providing solidarity, and advising on advocacy."
+        </blockquote>
+        <p style="margin-top: 0.5em; font-size: 1em; color: #444;">
+            Special thanks to DC Inside for allowing us to monitor and share engagement data from our own posts for transparency and advocacy purposes.<br>
+            (특별히 감사드립니다: DC Inside에서 저희 게시글의 조회수 및 참여 데이터를 모니터링하고 공유할 수 있도록 허락해주셨습니다. 투명성과 옹호 활동을 위해 사용됩니다.)
+        </p>
+        <footer>
+            <a href="https://x.com/Gender_Watchdog/status/1917483599189926092" target="_blank" rel="noopener">
+                View the pinned tweet
+            </a>
+        </footer>
+    </div>
+  
+    <!-- Links & Resources Section -->
+    <section class="links-resources-section">
+        <div class="container">
+            <h3>Links & Resources</h3>
+            <ul class="links-list">
+                <li><a href="https://genderwatchdog.org/" target="_blank" rel="noopener">Dongguk University: Timeline of Sexual Violence & Institutional Betrayal</a> &ndash; Documenting a decade of institutional failure and negligence (2008-2025)</li>
+                <li><a href="https://metookorea2025.genderwatchdog.org/" target="_blank" rel="noopener">#MeTooKorea2025 Timeline Website</a> &ndash; Systemic sexual violence, cover-ups, and Title IX risks across Korean universities and the film industry (K-Arts, Chung-Ang, Hongik, Sidus FNH, Netflix, and more)</li>
+                <li><a href="https://blog.genderwatchdog.org/" target="_blank" rel="noopener">Gender Watchdog Blog</a> &ndash; Documentation of Dongguk University's sexual violence crisis, public funds misuse, and institutional betrayal</li>
+                <li><a href="https://x.com/Gender_Watchdog" target="_blank" rel="noopener">X.com (Twitter): @Gender_Watchdog</a></li>
+                <li><a href="https://www.youtube.com/@GenderWatchdog/shorts" target="_blank" rel="noopener">YouTube: Gender Watchdog Channel</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imgs/favicons/gender_watchdog_favicon_48x48.png" alt="Gender Watchdog Logo">
+            </div>
+            <div class="footer-text">
+                <span>
+                    This dashboard documents not only Dongguk University's sexual violence crisis, institutional cover-ups, and alleged misuse of public funds, but also exposes how these issues are systemic across Korean higher education. Title IX compliance risks are now an existential threat to Korean universities as U.S. partners re-evaluate relationships, ATIXA has been notified about multiple institutions, and the KWDI report shows 61.5% of female arts students are victims of sexual violence (65.5% by faculty, who are predominantly male).
+                </span>
+                <p>
+                    This site uses privacy-focused <a href="https://usefathom.com/ref/UKSUATNV" target="_blank" rel="noopener">Fathom Analytics</a> which is GDPR compliant and does not track personal data.
+                </p>
+                <p style="font-size:0.9rem; opacity:0.8;">
+                    All data last updated: <span id="footer-updated-date"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
