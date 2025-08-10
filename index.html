@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#MeTooKorea2025 Dashboard - Real-time University Sexual Violence Monitoring | Gender Watchdog</title>
     <meta name="description" content="Real-time dashboard monitoring engagement with #MeTooKorea2025 posts about sexual violence cover-ups across Korean universities. Track views, engagement, and awareness campaigns by university on DC Inside.">
-    <meta name="keywords" content="MeTooKorea2025, Korean university sexual violence, Dongguk University, sexual violence monitoring, university sexual harassment, Korean women's rights, sexual violence prevention, university accountability, Title IX Korea, Korean university reform">
+    <meta name="keywords" content="Gender Watchdog, MeTooKorea2025, DC Inside, Korean university sexual violence, Dongguk University, sexual violence monitoring, university sexual harassment, Korean women's rights, sexual violence prevention, university accountability, Title IX Korea, Korean university reform">
     
     <!-- Canonical and language tags -->
     <link rel="canonical" href="https://dashboard.genderwatchdog.org/">
@@ -22,6 +22,7 @@
     <meta property="og:description" content="Real-time dashboard monitoring engagement with #MeTooKorea2025 posts about sexual violence cover-ups across Korean universities. Track views, engagement, and awareness campaigns by university.">
     <meta property="og:image" content="https://dashboard.genderwatchdog.org/imgs/gender-watchdog-icon-04142025.png">
     <meta property="og:site_name" content="Gender Watchdog Dashboard">
+    <meta name="author" content="Gender Watchdog">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -58,6 +59,50 @@
             document.getElementById('error-display').textContent = 'Error: ' + message;
             document.getElementById('error-display').style.display = 'block';
         };
+    </script>
+    
+    <!-- Structured Data: Organization and WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gender Watchdog",
+      "url": "https://dashboard.genderwatchdog.org/",
+      "logo": "https://dashboard.genderwatchdog.org/imgs/gender-watchdog-icon-04142025.png",
+      "sameAs": [
+        "https://genderwatchdog.org/",
+        "https://x.com/Gender_Watchdog",
+        "https://www.youtube.com/@GenderWatchdog"
+      ],
+      "description": "Gender Watchdog operates the #MeTooKorea2025 dashboard tracking engagement of advocacy posts on DC Inside across Korean universities."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "#MeTooKorea2025 Dashboard | Gender Watchdog",
+      "url": "https://dashboard.genderwatchdog.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dashboard.genderwatchdog.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Gender Watchdog"
+        },
+        {
+          "@type": "Thing",
+          "name": "MeTooKorea2025"
+        },
+        {
+          "@type": "Thing",
+          "name": "DC Inside"
+        }
+      ]
+    }
     </script>
 </head>
 <body>

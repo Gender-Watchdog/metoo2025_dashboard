@@ -90,26 +90,86 @@ async function loadData() {
 // Try to load data from CSV as a fallback
 async function tryLoadFromCSV() {
     try {
-        console.log("Attempting to load data from sources/university_data_current.csv as fallback");
-        const response = await fetch('sources/university_data_current.csv');
-        
-        if (!response.ok) {
-            console.error("CSV fallback failed:", response.status);
+        // Helper to fetch CSV text or return null
+        const fetchCSV = async (path) => {
+            try {
+                const res = await fetch(path);
+                if (!res.ok) return null;
+                return await res.text();
+            } catch (_) {
+                return null;
+            }
+        };
+
+        // Try preferred CSV first, then dc_inside_post_urls.csv as secondary
+        console.log("Attempting CSV fallback(s)...");
+        let csvText = await fetchCSV('sources/university_data_current.csv');
+        let sourceUsed = 'sources/university_data_current.csv';
+
+        if (!csvText) {
+            csvText = await fetchCSV('sources/dc_inside_post_urls.csv');
+            sourceUsed = 'sources/dc_inside_post_urls.csv';
+        }
+
+        if (!csvText) {
+            console.error('No CSV fallback available.');
             return;
         }
-        
-        const csvText = await response.text();
-        const data = parseCSV(csvText);
-        
+
+        const rawRows = parseCSV(csvText);
+
+        if (!rawRows || rawRows.length === 0) {
+            console.error('CSV parsed but contained no rows.');
+            return;
+        }
+
+        // Normalize rows to the structure used by the dashboard
+        const normalized = rawRows.map((row) => {
+            const name = (row.name || row.english_name || '').trim();
+            const koreanName = (row.korean_name || '').trim();
+            const initialCount = Number(row.initial_count ?? 0) || 0;
+            const currentCount = Number((row.current_count ?? row.initial_count) ?? 0) || initialCount;
+            const increaseValue = Number((row.increase ?? (currentCount - initialCount)) ?? 0) || (currentCount - initialCount);
+            const incPct = (row.increase_percent !== undefined && row.increase_percent !== null)
+                ? Number(row.increase_percent)
+                : (initialCount > 0 ? Number(((increaseValue / initialCount) * 100).toFixed(2)) : 0);
+            const recs = Number(row.recommendation_count ?? 0) || 0;
+            const comments = Number(row.comment_count ?? 0) || 0;
+            const url = (row.url || '').trim();
+            const postTitle = row.post_title || null;
+            const postDate = row.post_date || null;
+            const lastAccessed = row.date_accessed || row.last_accessed || null;
+            const lastUpdated = row.last_updated || lastAccessed || new Date().toISOString().replace('T', ' ').slice(0, 19);
+
+            return {
+                name,
+                korean_name: koreanName,
+                initial_count: initialCount,
+                current_count: currentCount,
+                increase: increaseValue,
+                increase_percent: incPct,
+                recommendation_count: recs,
+                comment_count: comments,
+                post_date: postDate,
+                post_title: postTitle,
+                last_accessed: lastAccessed,
+                last_updated: lastUpdated,
+                url
+            };
+        });
+
+        // Filter out rows without a name or url to avoid empty entries
+        const data = normalized.filter((r) => r.name);
+
         if (data && data.length > 0) {
-            console.log("Loaded data from CSV:", data.length, "records");
-            
+            console.log(`Loaded data from CSV (${sourceUsed}):`, data.length, 'records');
+
             universityData = data;
-            
+
             // Create metadata
-            const totalViews = data.reduce((sum, uni) => sum + parseInt(uni.current_count || 0), 0);
-            const totalIncrease = data.reduce((sum, uni) => sum + parseInt(uni.increase || 0), 0);
-            
+            const totalViews = data.reduce((sum, uni) => sum + (Number(uni.current_count) || 0), 0);
+            const totalIncrease = data.reduce((sum, uni) => sum + (Number(uni.increase) || 0), 0);
+
             metadata = {
                 total_universities: data.length,
                 total_views: totalViews,
@@ -117,14 +177,14 @@ async function tryLoadFromCSV() {
                 last_updated: data[0]?.last_updated || new Date().toISOString(),
                 average_increase: data.length > 0 ? totalIncrease / data.length : 0
             };
-            
+
             // Update UI
             updateTimestamp();
             renderTable();
             renderChart();
             updateStatistics();
-            
-            errorDisplay.textContent = "JSON loading failed, but data was loaded from CSV as fallback.";
+
+            errorDisplay.textContent = `JSON loading failed, but data was loaded from CSV fallback (${sourceUsed}).`;
             errorDisplay.style.display = 'block';
         }
     } catch (csvError) {
