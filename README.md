@@ -60,6 +60,19 @@ Data is automatically updated daily via GitHub Actions. To update manually:
   - json
   - re
 
+## Legal & Licensing
+
+### Truthful Posture Statement
+This is an independently funded investigative project dedicated to transparency and public interest. We operate autonomously without affiliation to any political organization or corporate entity.
+
+### Licensing Information
+This project operates under a dual-license model:
+- **Source Code**: The software, scripts, and configuration files are licensed under the [Apache License, Version 2.0](LICENSE).
+- **Content**: The datasets, investigative reports, and written documentation are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License](LICENSE-CONTENT).
+
+### Disclaimers
+The information provided in this dashboard is for educational and informational purposes only. We do not provide legal advice, nor do we verify or issue official accreditation for any institution mentioned. Users are encouraged to independently verify all data.
+
 ## Credits
 
 Created by GenderWatchdog, 2025. All rights reserved. 
