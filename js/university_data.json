@@ -1,986 +1,988 @@
 {
   "metadata": {
     "total_universities": 241,
-    "total_views": 39217,
-    "total_increase": 295,
-    "last_updated": "2026-01-22 04:42:04",
-    "average_increase": 1.22
+    "total_views": 39343,
+    "total_increase": 126,
+    "last_updated": "2026-01-23 04:48:29",
+    "average_increase": 0.52
   },
   "universities": [
     {
-      "name": "dongguk_zero_canada",
-      "korean_name": "동국대 캐나다 0곳",
-      "initial_count": 0,
-      "current_count": 85,
-      "increase": 85,
-      "increase_percent": 0,
-      "recommendation_count": 0,
-      "comment_count": 1,
-      "post_date": "2026-01-21 09:28:32",
+      "name": "dongguk_scrubbing_fail",
+      "korean_name": "동국대 파트너 삭제 실패",
+      "initial_count": 354,
+      "current_count": 379,
+      "increase": 25,
+      "increase_percent": 7.06,
+      "recommendation_count": 3,
+      "comment_count": 2,
+      "post_date": "2026-01-20 11:22:24",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:42:03",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129142"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:26",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129141"
     },
     {
       "name": "seoul_national_fake_partners",
       "korean_name": "서울대 파트너 허위",
-      "initial_count": 0,
-      "current_count": 78,
-      "increase": 78,
-      "increase_percent": 0,
+      "initial_count": 78,
+      "current_count": 96,
+      "increase": 18,
+      "increase_percent": 23.08,
       "recommendation_count": 1,
       "comment_count": 0,
       "post_date": "2026-01-21 17:27:50",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:42:04",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:29",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=234659"
     },
     {
-      "name": "dongguk_scrubbing_fail",
-      "korean_name": "동국대 파트너 삭제 실패",
-      "initial_count": 313,
-      "current_count": 354,
-      "increase": 41,
-      "increase_percent": 13.1,
-      "recommendation_count": 2,
-      "comment_count": 2,
-      "post_date": "2026-01-20 11:22:24",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:42:01",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129141"
-    },
-    {
-      "name": "dongguk_ubc_fraud",
-      "korean_name": "동국대 UBC 사기",
-      "initial_count": 374,
-      "current_count": 378,
-      "increase": 4,
-      "increase_percent": 1.07,
-      "recommendation_count": 1,
-      "comment_count": 0,
-      "post_date": "2025-09-04 13:15:15",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:43",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128568"
-    },
-    {
-      "name": "dongguk_china_4_frauds",
-      "korean_name": "동국대 중국 4개대 사기",
-      "initial_count": 218,
-      "current_count": 222,
-      "increase": 4,
-      "increase_percent": 1.83,
-      "recommendation_count": 0,
-      "comment_count": 2,
-      "post_date": "2025-12-28 21:31:42",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:55",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129015"
-    },
-    {
-      "name": "dongguk_aacsb_warning",
-      "korean_name": "동국대 AACSB 경고",
-      "initial_count": 150,
-      "current_count": 154,
-      "increase": 4,
-      "increase_percent": 2.67,
+      "name": "dongguk_zero_canada",
+      "korean_name": "동국대 캐나다 0곳",
+      "initial_count": 85,
+      "current_count": 96,
+      "increase": 11,
+      "increase_percent": 12.94,
       "recommendation_count": 1,
       "comment_count": 2,
-      "post_date": "2026-01-06 21:47:51",
+      "post_date": "2026-01-21 09:28:32",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:58",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129062"
-    },
-    {
-      "name": "dongguk_soton_safety_breach",
-      "korean_name": "동국대 사우스햄튼 안전위반",
-      "initial_count": 137,
-      "current_count": 141,
-      "increase": 4,
-      "increase_percent": 2.92,
-      "recommendation_count": 1,
-      "comment_count": 1,
-      "post_date": "2026-01-08 11:33:50",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:42:00",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129068"
-    },
-    {
-      "name": "sogang_sex_traffic",
-      "korean_name": "서강대 성매매",
-      "initial_count": 355,
-      "current_count": 358,
-      "increase": 3,
-      "increase_percent": 0.85,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-19 10:38:27",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:58",
-      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649175"
-    },
-    {
-      "name": "donggu_ubc_foi",
-      "korean_name": "동국대 UBC 정보공개",
-      "initial_count": 195,
-      "current_count": 198,
-      "increase": 3,
-      "increase_percent": 1.54,
-      "recommendation_count": 1,
-      "comment_count": 0,
-      "post_date": "2025-12-20 15:19:05",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:46",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128966"
-    },
-    {
-      "name": "dongguk_hit_fraud",
-      "korean_name": "동국대 하얼빈공대 사기",
-      "initial_count": 176,
-      "current_count": 179,
-      "increase": 3,
-      "increase_percent": 1.7,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-12-28 11:19:02",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:52",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129010"
-    },
-    {
-      "name": "dongguk_peking_fraud",
-      "korean_name": "동국대 북경대 사기",
-      "initial_count": 128,
-      "current_count": 131,
-      "increase": 3,
-      "increase_percent": 2.34,
-      "recommendation_count": 1,
-      "comment_count": 1,
-      "post_date": "2025-12-28 16:52:50",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:53",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129011"
-    },
-    {
-      "name": "dongguk_30_frauds",
-      "korean_name": "동국대 30개대 사기",
-      "initial_count": 294,
-      "current_count": 297,
-      "increase": 3,
-      "increase_percent": 1.02,
-      "recommendation_count": 2,
-      "comment_count": 1,
-      "post_date": "2025-12-31 11:28:41",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:57",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129031"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:28",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129142"
     },
     {
       "name": "dongguk_witnesses",
       "korean_name": "동국대 성폭력 목격자",
-      "initial_count": 518,
-      "current_count": 520,
-      "increase": 2,
-      "increase_percent": 0.39,
+      "initial_count": 520,
+      "current_count": 524,
+      "increase": 4,
+      "increase_percent": 0.77,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-05-25 15:38:26",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:42",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:45",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128298"
+    },
+    {
+      "name": "dongguk_30_frauds",
+      "korean_name": "동국대 30개대 사기",
+      "initial_count": 297,
+      "current_count": 300,
+      "increase": 3,
+      "increase_percent": 1.01,
+      "recommendation_count": 2,
+      "comment_count": 1,
+      "post_date": "2025-12-31 11:28:41",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:22",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129031"
     },
     {
       "name": "dongguk_crisis",
       "korean_name": "동국대 위기경고",
-      "initial_count": 793,
-      "current_count": 795,
+      "initial_count": 795,
+      "current_count": 797,
       "increase": 2,
       "increase_percent": 0.25,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-06-01 13:29:09",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:43",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:47",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128322"
     },
     {
-      "name": "feminism_faculty_firing",
-      "korean_name": "페미니즘 교수 해고",
-      "initial_count": 274,
-      "current_count": 276,
+      "name": "univ_sex_traffic",
+      "korean_name": "대학생 성매매",
+      "initial_count": 310,
+      "current_count": 312,
       "increase": 2,
-      "increase_percent": 0.73,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-28 10:11:55",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:16",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=710"
-    },
-    {
-      "name": "university_students_faculty_firing",
-      "korean_name": "대학생 교수 해고",
-      "initial_count": 315,
-      "current_count": 317,
-      "increase": 2,
-      "increase_percent": 0.63,
+      "increase_percent": 0.65,
       "recommendation_count": 0,
       "comment_count": 1,
-      "post_date": "2025-06-28 10:39:19",
+      "post_date": "2025-06-19 10:36:18",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:28",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=479"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:14",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=473"
     },
     {
-      "name": "r-busan_foreign_hrw",
-      "korean_name": "부산외국어대 HRW",
-      "initial_count": 271,
-      "current_count": 273,
+      "name": "dongguk_ubc_fraud",
+      "korean_name": "동국대 UBC 사기",
+      "initial_count": 378,
+      "current_count": 380,
       "increase": 2,
-      "increase_percent": 0.74,
-      "recommendation_count": 0,
+      "increase_percent": 0.53,
+      "recommendation_count": 1,
       "comment_count": 0,
-      "post_date": "2025-07-21 11:56:52",
+      "post_date": "2025-09-04 13:15:15",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:01",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=bufs&no=8604"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:07",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128568"
     },
     {
-      "name": "dongguk_soton_fraud",
-      "korean_name": "동국대 사우스햄튼 사기",
-      "initial_count": 224,
-      "current_count": 226,
+      "name": "dongguk_tsinghua_warning",
+      "korean_name": "동국대 칭화대 경고",
+      "initial_count": 171,
+      "current_count": 173,
       "increase": 2,
-      "increase_percent": 0.89,
-      "recommendation_count": 2,
+      "increase_percent": 1.17,
+      "recommendation_count": 1,
       "comment_count": 2,
-      "post_date": "2025-12-24 08:58:13",
+      "post_date": "2025-12-26 18:55:25",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:47",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128993"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:13",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129005"
     },
     {
-      "name": "dongguk_bfsu_fraud",
-      "korean_name": "동국대 북경외대 사기",
-      "initial_count": 133,
-      "current_count": 135,
+      "name": "dongguk_hit_fraud",
+      "korean_name": "동국대 하얼빈공대 사기",
+      "initial_count": 179,
+      "current_count": 181,
       "increase": 2,
-      "increase_percent": 1.5,
+      "increase_percent": 1.12,
       "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-12-28 09:38:05",
+      "post_date": "2025-12-28 11:19:02",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:50",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129009"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:16",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129010"
     },
     {
-      "name": "dongguk",
-      "korean_name": "동국대",
-      "initial_count": 1168,
-      "current_count": 1169,
-      "increase": 1,
-      "increase_percent": 0.09,
-      "recommendation_count": 0,
-      "comment_count": 6,
-      "post_date": "2025-04-25 02:03:20",
+      "name": "dongguk_peking_fraud",
+      "korean_name": "동국대 북경대 사기",
+      "initial_count": 131,
+      "current_count": 133,
+      "increase": 2,
+      "increase_percent": 1.53,
+      "recommendation_count": 1,
+      "comment_count": 1,
+      "post_date": "2025-12-28 16:52:50",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:15",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128215"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:17",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129011"
     },
     {
-      "name": "dongdae_urgent",
-      "korean_name": "동대 긴급",
-      "initial_count": 509,
-      "current_count": 510,
-      "increase": 1,
-      "increase_percent": 0.2,
+      "name": "dongguk_china_4_frauds",
+      "korean_name": "동국대 중국 4개대 사기",
+      "initial_count": 222,
+      "current_count": 224,
+      "increase": 2,
+      "increase_percent": 0.9,
       "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-05-20 19:27:56",
+      "comment_count": 2,
+      "post_date": "2025-12-28 21:31:42",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:17",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128283"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:19",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129015"
     },
     {
       "name": "chungang",
       "korean_name": "중앙대",
-      "initial_count": 546,
-      "current_count": 547,
+      "initial_count": 547,
+      "current_count": 548,
       "increase": 1,
       "increase_percent": 0.18,
       "recommendation_count": 0,
       "comment_count": 1,
       "post_date": "2025-05-14 16:34:51",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:21",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:19",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372500"
     },
     {
       "name": "sogang",
       "korean_name": "서강대",
-      "initial_count": 466,
-      "current_count": 467,
+      "initial_count": 467,
+      "current_count": 468,
       "increase": 1,
       "increase_percent": 0.21,
       "recommendation_count": 0,
       "comment_count": 1,
       "post_date": "2025-05-14 23:40:26",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:29",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:29",
       "url": "https://gall.dcinside.com/board/view/?id=sogang&no=648491"
     },
     {
       "name": "suwon womens uni",
       "korean_name": "수원여대",
-      "initial_count": 487,
-      "current_count": 488,
+      "initial_count": 488,
+      "current_count": 489,
       "increase": 1,
-      "increase_percent": 0.21,
+      "increase_percent": 0.2,
       "recommendation_count": 0,
       "comment_count": 1,
       "post_date": "2025-05-16 21:27:38",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:38",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:41",
       "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=30"
     },
     {
       "name": "university students",
       "korean_name": "대학생",
-      "initial_count": 417,
-      "current_count": 418,
+      "initial_count": 418,
+      "current_count": 419,
       "increase": 1,
       "increase_percent": 0.24,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-05-14 18:24:45",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:39",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:43",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=458"
     },
     {
       "name": "dongguk_racial",
       "korean_name": "동국대 차별",
-      "initial_count": 391,
-      "current_count": 392,
+      "initial_count": 392,
+      "current_count": 393,
       "increase": 1,
       "increase_percent": 0.26,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-06-05 01:24:15",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:45",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:49",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128340"
     },
     {
       "name": "feminism_traffic",
       "korean_name": "페미 성매매",
-      "initial_count": 406,
-      "current_count": 407,
+      "initial_count": 407,
+      "current_count": 408,
       "increase": 1,
       "increase_percent": 0.25,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-06-08 09:44:37",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:49",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:53",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=697"
     },
     {
       "name": "dongguk_sex_traffic",
       "korean_name": "동국대 성매매",
-      "initial_count": 309,
-      "current_count": 310,
+      "initial_count": 310,
+      "current_count": 311,
       "increase": 1,
       "increase_percent": 0.32,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-06-18 07:45:26",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:54",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:59",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128382"
     },
     {
-      "name": "suwon_womens_sex_traffic",
-      "korean_name": "수원여대 성매매",
-      "initial_count": 288,
-      "current_count": 289,
-      "increase": 1,
-      "increase_percent": 0.35,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-19 10:35:47",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:04",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=31"
-    },
-    {
-      "name": "univ_sex_traffic",
-      "korean_name": "대학생 성매매",
-      "initial_count": 309,
-      "current_count": 310,
-      "increase": 1,
-      "increase_percent": 0.32,
-      "recommendation_count": 0,
-      "comment_count": 1,
-      "post_date": "2025-06-19 10:36:18",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:06",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=473"
-    },
-    {
-      "name": "dongguk_faculty_firing",
-      "korean_name": "동국대 교수 해고",
-      "initial_count": 289,
-      "current_count": 290,
-      "increase": 1,
-      "increase_percent": 0.35,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-28 10:00:00",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:10",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128401"
-    },
-    {
-      "name": "chungang_faculty_firing",
-      "korean_name": "중앙대 교수 해고",
-      "initial_count": 389,
-      "current_count": 390,
-      "increase": 1,
-      "increase_percent": 0.26,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-28 10:14:55",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:11",
-      "url": "https://gall.dcinside.com/board/view/?id=cau&no=372639"
-    },
-    {
-      "name": "sogang_faculty_firing",
-      "korean_name": "서강대 교수 해고",
-      "initial_count": 298,
-      "current_count": 299,
-      "increase": 1,
-      "increase_percent": 0.34,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-06-28 10:30:58",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:21",
-      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649384"
-    },
-    {
-      "name": "suwon_womens_uni_faculty_firing",
-      "korean_name": "수원여자대 교수 해고",
-      "initial_count": 370,
-      "current_count": 371,
-      "increase": 1,
-      "increase_percent": 0.27,
-      "recommendation_count": 0,
-      "comment_count": 1,
-      "post_date": "2025-06-28 10:38:13",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:26",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=32"
-    },
-    {
-      "name": "dongguk_defamation_law",
-      "korean_name": "동국대 명예훼손법",
-      "initial_count": 274,
-      "current_count": 275,
-      "increase": 1,
-      "increase_percent": 0.36,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-01 19:41:05",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:32",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128404"
-    },
-    {
-      "name": "university_students_defamation_law",
-      "korean_name": "대학생 명예훼손법",
-      "initial_count": 262,
-      "current_count": 263,
-      "increase": 1,
-      "increase_percent": 0.38,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-01 19:47:25",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:36",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=480"
-    },
-    {
-      "name": "feminism_defamation_law",
-      "korean_name": "페미니즘 명예훼손법",
-      "initial_count": 260,
-      "current_count": 261,
-      "increase": 1,
-      "increase_percent": 0.38,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-01 19:48:54",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:38",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=712"
-    },
-    {
-      "name": "sogang_defamation_law",
-      "korean_name": "서강대 명예훼손법",
-      "initial_count": 293,
-      "current_count": 294,
-      "increase": 1,
-      "increase_percent": 0.34,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-01 19:54:12",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:42",
-      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649455"
-    },
-    {
-      "name": "suwon_womens_uni_defamation_law",
-      "korean_name": "수원여자대 명예훼손법",
-      "initial_count": 285,
-      "current_count": 286,
-      "increase": 1,
-      "increase_percent": 0.35,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-01 19:55:56",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:44",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=33"
-    },
-    {
-      "name": "r-busan_foreign",
-      "korean_name": "부산외국어대",
-      "initial_count": 346,
-      "current_count": 347,
-      "increase": 1,
-      "increase_percent": 0.29,
-      "recommendation_count": 2,
-      "comment_count": 0,
-      "post_date": "2025-07-14 20:47:46",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:11",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=bufs&no=8598"
-    },
-    {
-      "name": "r-inje",
-      "korean_name": "인제대",
-      "initial_count": 323,
-      "current_count": 324,
-      "increase": 1,
-      "increase_percent": 0.31,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-14 20:49:03",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:12",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=inje&no=2483"
-    },
-    {
-      "name": "r-chungnam_nat",
-      "korean_name": "충남대",
-      "initial_count": 322,
-      "current_count": 323,
-      "increase": 1,
-      "increase_percent": 0.31,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-14 20:54:37",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:15",
-      "url": "https://gall.dcinside.com/board/view/?id=cnu&no=172852"
-    },
-    {
-      "name": "r-chungbuk_nat",
-      "korean_name": "충북대",
-      "initial_count": 409,
-      "current_count": 410,
-      "increase": 1,
-      "increase_percent": 0.24,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-14 20:57:37",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:18",
-      "url": "https://gall.dcinside.com/board/view/?id=chungbuk&no=225346"
-    },
-    {
-      "name": "r-kyungpook",
-      "korean_name": "경북대",
-      "initial_count": 220,
-      "current_count": 221,
-      "increase": 1,
-      "increase_percent": 0.45,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-15 21:35:43",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:20",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=knu&no=79"
-    },
-    {
-      "name": "r-andong",
-      "korean_name": "안동대",
-      "initial_count": 330,
-      "current_count": 331,
-      "increase": 1,
-      "increase_percent": 0.3,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-15 21:42:55",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:24",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=anu&no=7409"
-    },
-    {
-      "name": "r-chosun",
-      "korean_name": "조선대",
+      "name": "sogang_sex_traffic",
+      "korean_name": "서강대 성매매",
       "initial_count": 358,
       "current_count": 359,
       "increase": 1,
       "increase_percent": 0.28,
       "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-07-15 21:45:50",
+      "post_date": "2025-06-19 10:38:27",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:26",
-      "url": "https://gall.dcinside.com/board/view/?id=chosun&no=197304"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:04",
+      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649175"
     },
     {
-      "name": "r-honam",
-      "korean_name": "호남대",
-      "initial_count": 262,
-      "current_count": 263,
+      "name": "suwon_womens_sex_traffic",
+      "korean_name": "수원여대 성매매",
+      "initial_count": 289,
+      "current_count": 290,
       "increase": 1,
-      "increase_percent": 0.38,
+      "increase_percent": 0.35,
       "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-07-15 21:47:04",
+      "post_date": "2025-06-19 10:35:47",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:28",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=honam&no=738"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:12",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=31"
     },
     {
-      "name": "r-gachon",
-      "korean_name": "가천대",
-      "initial_count": 320,
-      "current_count": 321,
+      "name": "dongguk_faculty_firing",
+      "korean_name": "동국대 교수 해고",
+      "initial_count": 290,
+      "current_count": 291,
       "increase": 1,
-      "increase_percent": 0.31,
+      "increase_percent": 0.34,
       "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-07-15 21:58:57",
+      "post_date": "2025-06-28 10:00:00",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:32",
-      "url": "https://gall.dcinside.com/board/view/?id=kyungwon&no=260446"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:18",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128401"
     },
     {
-      "name": "r-kangwon",
-      "korean_name": "강원대",
-      "initial_count": 280,
-      "current_count": 281,
+      "name": "chungang_faculty_firing",
+      "korean_name": "중앙대 교수 해고",
+      "initial_count": 390,
+      "current_count": 391,
+      "increase": 1,
+      "increase_percent": 0.26,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-06-28 10:14:55",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:20",
+      "url": "https://gall.dcinside.com/board/view/?id=cau&no=372639"
+    },
+    {
+      "name": "feminism_faculty_firing",
+      "korean_name": "페미니즘 교수 해고",
+      "initial_count": 276,
+      "current_count": 277,
       "increase": 1,
       "increase_percent": 0.36,
-      "recommendation_count": 2,
+      "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-07-15 22:01:25",
+      "post_date": "2025-06-28 10:11:55",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:34",
-      "url": "https://gall.dcinside.com/board/view/?id=kangwon&no=194361"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:26",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=710"
     },
     {
-      "name": "dongguk_fraud",
-      "korean_name": "동국대 사기",
-      "initial_count": 314,
-      "current_count": 315,
+      "name": "sogang_faculty_firing",
+      "korean_name": "서강대 교수 해고",
+      "initial_count": 299,
+      "current_count": 300,
+      "increase": 1,
+      "increase_percent": 0.33,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-06-28 10:30:58",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:31",
+      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649384"
+    },
+    {
+      "name": "suwon_womens_uni_faculty_firing",
+      "korean_name": "수원여자대 교수 해고",
+      "initial_count": 371,
+      "current_count": 372,
+      "increase": 1,
+      "increase_percent": 0.27,
+      "recommendation_count": 0,
+      "comment_count": 1,
+      "post_date": "2025-06-28 10:38:13",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:37",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=32"
+    },
+    {
+      "name": "university_students_faculty_firing",
+      "korean_name": "대학생 교수 해고",
+      "initial_count": 317,
+      "current_count": 318,
       "increase": 1,
       "increase_percent": 0.32,
       "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-17 21:11:09",
+      "comment_count": 1,
+      "post_date": "2025-06-28 10:39:19",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:39",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128426"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:39",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=479"
     },
     {
-      "name": "seoul_womens_uni_fraud_1",
-      "korean_name": "서울여자대 사기",
-      "initial_count": 236,
-      "current_count": 237,
-      "increase": 1,
-      "increase_percent": 0.42,
-      "recommendation_count": 0,
-      "comment_count": 3,
-      "post_date": "2025-07-17 21:19:03",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:46",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=36"
-    },
-    {
-      "name": "university_students_fraud",
-      "korean_name": "대학생 사기",
-      "initial_count": 280,
-      "current_count": 281,
+      "name": "dongguk_defamation_law",
+      "korean_name": "동국대 명예훼손법",
+      "initial_count": 275,
+      "current_count": 276,
       "increase": 1,
       "increase_percent": 0.36,
       "recommendation_count": 0,
       "comment_count": 0,
-      "post_date": "2025-07-17 21:19:56",
+      "post_date": "2025-07-01 19:41:05",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:48",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=487"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:43",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128404"
     },
     {
-      "name": "sogang_fraud",
-      "korean_name": "서강대 사기",
-      "initial_count": 262,
-      "current_count": 263,
-      "increase": 1,
-      "increase_percent": 0.38,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-17 21:30:06",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:54",
-      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649660"
-    },
-    {
-      "name": "r-gachon_hrw",
-      "korean_name": "가천대 HRW",
-      "initial_count": 267,
-      "current_count": 268,
-      "increase": 1,
-      "increase_percent": 0.37,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 11:55:28",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:00",
-      "url": "https://gall.dcinside.com/board/view/?id=kyungwon&no=260459"
-    },
-    {
-      "name": "r-inje_hrw",
-      "korean_name": "인제대 HRW",
-      "initial_count": 240,
-      "current_count": 241,
-      "increase": 1,
-      "increase_percent": 0.42,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:33:06",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:03",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=inje&no=2484"
-    },
-    {
-      "name": "r-chungnam_nat_hrw",
-      "korean_name": "충남대 HRW",
-      "initial_count": 259,
-      "current_count": 260,
-      "increase": 1,
-      "increase_percent": 0.39,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:12:22",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:06",
-      "url": "https://gall.dcinside.com/board/view/?id=cnu&no=172876"
-    },
-    {
-      "name": "r-kyungpook_hrw",
-      "korean_name": "경북대 HRW",
-      "initial_count": 208,
-      "current_count": 209,
-      "increase": 1,
-      "increase_percent": 0.48,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:51:04",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:09",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=knu&no=80"
-    },
-    {
-      "name": "r-andong_hrw",
-      "korean_name": "안동대 HRW",
-      "initial_count": 265,
-      "current_count": 266,
-      "increase": 1,
-      "increase_percent": 0.38,
-      "recommendation_count": 1,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:27:31",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:20",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=anu&no=7413"
-    },
-    {
-      "name": "dongguk_hrw",
-      "korean_name": "동국대 HRW",
-      "initial_count": 243,
-      "current_count": 244,
-      "increase": 1,
-      "increase_percent": 0.41,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:28:44",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:22",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128431"
-    },
-    {
-      "name": "r-kangwon_hrw",
-      "korean_name": "강원대 HRW",
-      "initial_count": 253,
-      "current_count": 254,
-      "increase": 1,
-      "increase_percent": 0.4,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:36:05",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:27",
-      "url": "https://gall.dcinside.com/board/view/?id=kangwon&no=194413"
-    },
-    {
-      "name": "university_students_hrw",
-      "korean_name": "대학생 HRW",
-      "initial_count": 230,
-      "current_count": 231,
-      "increase": 1,
-      "increase_percent": 0.43,
-      "recommendation_count": 0,
-      "comment_count": 0,
-      "post_date": "2025-07-21 12:39:55",
-      "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:29",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=489"
-    },
-    {
-      "name": "sogang_hrw",
-      "korean_name": "서강대 HRW",
+      "name": "university_students_defamation_law",
+      "korean_name": "대학생 명예훼손법",
       "initial_count": 263,
       "current_count": 264,
       "increase": 1,
       "increase_percent": 0.38,
       "recommendation_count": 0,
       "comment_count": 0,
+      "post_date": "2025-07-01 19:47:25",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:48",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=480"
+    },
+    {
+      "name": "feminism_defamation_law",
+      "korean_name": "페미니즘 명예훼손법",
+      "initial_count": 261,
+      "current_count": 262,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-01 19:48:54",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:50",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=712"
+    },
+    {
+      "name": "sogang_defamation_law",
+      "korean_name": "서강대 명예훼손법",
+      "initial_count": 294,
+      "current_count": 295,
+      "increase": 1,
+      "increase_percent": 0.34,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-01 19:54:12",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:54",
+      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649455"
+    },
+    {
+      "name": "suwon_womens_uni_defamation_law",
+      "korean_name": "수원여자대 명예훼손법",
+      "initial_count": 286,
+      "current_count": 287,
+      "increase": 1,
+      "increase_percent": 0.35,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-01 19:55:56",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:57",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=33"
+    },
+    {
+      "name": "r-busan_foreign",
+      "korean_name": "부산외국어대",
+      "initial_count": 347,
+      "current_count": 348,
+      "increase": 1,
+      "increase_percent": 0.29,
+      "recommendation_count": 2,
+      "comment_count": 0,
+      "post_date": "2025-07-14 20:47:46",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:25",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=bufs&no=8598"
+    },
+    {
+      "name": "r-inje",
+      "korean_name": "인제대",
+      "initial_count": 324,
+      "current_count": 325,
+      "increase": 1,
+      "increase_percent": 0.31,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-14 20:49:03",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:27",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=inje&no=2483"
+    },
+    {
+      "name": "r-chungnam_nat",
+      "korean_name": "충남대",
+      "initial_count": 323,
+      "current_count": 324,
+      "increase": 1,
+      "increase_percent": 0.31,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-14 20:54:37",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:30",
+      "url": "https://gall.dcinside.com/board/view/?id=cnu&no=172852"
+    },
+    {
+      "name": "r-chungbuk_nat",
+      "korean_name": "충북대",
+      "initial_count": 410,
+      "current_count": 411,
+      "increase": 1,
+      "increase_percent": 0.24,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-14 20:57:37",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:32",
+      "url": "https://gall.dcinside.com/board/view/?id=chungbuk&no=225346"
+    },
+    {
+      "name": "r-kyungpook",
+      "korean_name": "경북대",
+      "initial_count": 221,
+      "current_count": 222,
+      "increase": 1,
+      "increase_percent": 0.45,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-15 21:35:43",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:35",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=knu&no=79"
+    },
+    {
+      "name": "r-andong",
+      "korean_name": "안동대",
+      "initial_count": 331,
+      "current_count": 332,
+      "increase": 1,
+      "increase_percent": 0.3,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-15 21:42:55",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:40",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=anu&no=7409"
+    },
+    {
+      "name": "r-chosun",
+      "korean_name": "조선대",
+      "initial_count": 359,
+      "current_count": 360,
+      "increase": 1,
+      "increase_percent": 0.28,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-15 21:45:50",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:42",
+      "url": "https://gall.dcinside.com/board/view/?id=chosun&no=197304"
+    },
+    {
+      "name": "r-honam",
+      "korean_name": "호남대",
+      "initial_count": 263,
+      "current_count": 264,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-15 21:47:04",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:44",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=honam&no=738"
+    },
+    {
+      "name": "r-gachon",
+      "korean_name": "가천대",
+      "initial_count": 321,
+      "current_count": 322,
+      "increase": 1,
+      "increase_percent": 0.31,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-15 21:58:57",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:48",
+      "url": "https://gall.dcinside.com/board/view/?id=kyungwon&no=260446"
+    },
+    {
+      "name": "r-kangwon",
+      "korean_name": "강원대",
+      "initial_count": 281,
+      "current_count": 282,
+      "increase": 1,
+      "increase_percent": 0.36,
+      "recommendation_count": 2,
+      "comment_count": 0,
+      "post_date": "2025-07-15 22:01:25",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:51",
+      "url": "https://gall.dcinside.com/board/view/?id=kangwon&no=194361"
+    },
+    {
+      "name": "dongguk_fraud",
+      "korean_name": "동국대 사기",
+      "initial_count": 315,
+      "current_count": 316,
+      "increase": 1,
+      "increase_percent": 0.32,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-17 21:11:09",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:56",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128426"
+    },
+    {
+      "name": "seoul_womens_uni_fraud_1",
+      "korean_name": "서울여자대 사기",
+      "initial_count": 237,
+      "current_count": 238,
+      "increase": 1,
+      "increase_percent": 0.42,
+      "recommendation_count": 0,
+      "comment_count": 3,
+      "post_date": "2025-07-17 21:19:03",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:04",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=36"
+    },
+    {
+      "name": "university_students_fraud",
+      "korean_name": "대학생 사기",
+      "initial_count": 281,
+      "current_count": 282,
+      "increase": 1,
+      "increase_percent": 0.36,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-17 21:19:56",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:05",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=487"
+    },
+    {
+      "name": "sogang_fraud",
+      "korean_name": "서강대 사기",
+      "initial_count": 263,
+      "current_count": 264,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-17 21:30:06",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:13",
+      "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649660"
+    },
+    {
+      "name": "r-gachon_hrw",
+      "korean_name": "가천대 HRW",
+      "initial_count": 268,
+      "current_count": 269,
+      "increase": 1,
+      "increase_percent": 0.37,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 11:55:28",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:19",
+      "url": "https://gall.dcinside.com/board/view/?id=kyungwon&no=260459"
+    },
+    {
+      "name": "r-busan_foreign_hrw",
+      "korean_name": "부산외국어대 HRW",
+      "initial_count": 273,
+      "current_count": 274,
+      "increase": 1,
+      "increase_percent": 0.37,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 11:56:52",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:21",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=bufs&no=8604"
+    },
+    {
+      "name": "r-inje_hrw",
+      "korean_name": "인제대 HRW",
+      "initial_count": 241,
+      "current_count": 242,
+      "increase": 1,
+      "increase_percent": 0.41,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:33:06",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:22",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=inje&no=2484"
+    },
+    {
+      "name": "r-chungnam_nat_hrw",
+      "korean_name": "충남대 HRW",
+      "initial_count": 260,
+      "current_count": 261,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:12:22",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:26",
+      "url": "https://gall.dcinside.com/board/view/?id=cnu&no=172876"
+    },
+    {
+      "name": "r-kyungpook_hrw",
+      "korean_name": "경북대 HRW",
+      "initial_count": 209,
+      "current_count": 210,
+      "increase": 1,
+      "increase_percent": 0.48,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:51:04",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:30",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=knu&no=80"
+    },
+    {
+      "name": "r-andong_hrw",
+      "korean_name": "안동대 HRW",
+      "initial_count": 266,
+      "current_count": 267,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 1,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:27:31",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:42",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=anu&no=7413"
+    },
+    {
+      "name": "dongguk_hrw",
+      "korean_name": "동국대 HRW",
+      "initial_count": 244,
+      "current_count": 245,
+      "increase": 1,
+      "increase_percent": 0.41,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:28:44",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:44",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128431"
+    },
+    {
+      "name": "r-kangwon_hrw",
+      "korean_name": "강원대 HRW",
+      "initial_count": 254,
+      "current_count": 255,
+      "increase": 1,
+      "increase_percent": 0.39,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:36:05",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:49",
+      "url": "https://gall.dcinside.com/board/view/?id=kangwon&no=194413"
+    },
+    {
+      "name": "university_students_hrw",
+      "korean_name": "대학생 HRW",
+      "initial_count": 231,
+      "current_count": 232,
+      "increase": 1,
+      "increase_percent": 0.43,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-07-21 12:39:55",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:52",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=489"
+    },
+    {
+      "name": "sogang_hrw",
+      "korean_name": "서강대 HRW",
+      "initial_count": 264,
+      "current_count": 265,
+      "increase": 1,
+      "increase_percent": 0.38,
+      "recommendation_count": 0,
+      "comment_count": 0,
       "post_date": "2025-07-21 12:42:40",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:32",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:55",
       "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649736"
     },
     {
       "name": "feminism_hrw",
       "korean_name": "페미니즘 HRW",
-      "initial_count": 227,
-      "current_count": 228,
+      "initial_count": 228,
+      "current_count": 229,
       "increase": 1,
       "increase_percent": 0.44,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-07-21 12:45:53",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:36",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:59",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=726"
     },
     {
       "name": "r-honam_hrw",
       "korean_name": "호남대 HRW",
-      "initial_count": 242,
-      "current_count": 243,
+      "initial_count": 243,
+      "current_count": 244,
       "increase": 1,
       "increase_percent": 0.41,
       "recommendation_count": 0,
       "comment_count": 0,
       "post_date": "2025-07-21 11:57:42",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:39",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:02",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=honam&no=739"
     },
     {
-      "name": "dongguk_tsinghua_warning",
-      "korean_name": "동국대 칭화대 경고",
-      "initial_count": 170,
-      "current_count": 171,
+      "name": "donggu_ubc_foi",
+      "korean_name": "동국대 UBC 정보공개",
+      "initial_count": 198,
+      "current_count": 199,
       "increase": 1,
-      "increase_percent": 0.59,
+      "increase_percent": 0.51,
+      "recommendation_count": 1,
+      "comment_count": 0,
+      "post_date": "2025-12-20 15:19:05",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:10",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128966"
+    },
+    {
+      "name": "dongguk_soton_fraud",
+      "korean_name": "동국대 사우스햄튼 사기",
+      "initial_count": 226,
+      "current_count": 227,
+      "increase": 1,
+      "increase_percent": 0.44,
+      "recommendation_count": 2,
+      "comment_count": 2,
+      "post_date": "2025-12-24 08:58:13",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:11",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128993"
+    },
+    {
+      "name": "dongguk_bfsu_fraud",
+      "korean_name": "동국대 북경외대 사기",
+      "initial_count": 135,
+      "current_count": 136,
+      "increase": 1,
+      "increase_percent": 0.74,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": "2025-12-28 09:38:05",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:14",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129009"
+    },
+    {
+      "name": "dongguk_aacsb_warning",
+      "korean_name": "동국대 AACSB 경고",
+      "initial_count": 154,
+      "current_count": 155,
+      "increase": 1,
+      "increase_percent": 0.65,
       "recommendation_count": 1,
       "comment_count": 2,
-      "post_date": "2025-12-26 18:55:25",
+      "post_date": "2026-01-06 21:47:51",
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:49",
-      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129005"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:23",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129062"
+    },
+    {
+      "name": "dongguk_soton_safety_breach",
+      "korean_name": "동국대 사우스햄튼 안전위반",
+      "initial_count": 141,
+      "current_count": 142,
+      "increase": 1,
+      "increase_percent": 0.71,
+      "recommendation_count": 1,
+      "comment_count": 1,
+      "post_date": "2026-01-08 11:33:50",
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:25",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129068"
+    },
+    {
+      "name": "dongguk",
+      "korean_name": "동국대",
+      "initial_count": 1169,
+      "current_count": 1169,
+      "increase": 0,
+      "increase_percent": 0,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": null,
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:35:16",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128215",
+      "error": "HTTPSConnectionPool(host='gall.dcinside.com', port=443): Max retries exceeded with url: /board/view/?id=dongguk&no=128215 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gall.dcinside.com', port=443) at 0x7fbbf300ae40>, 'Connection to gall.dcinside.com timed out. (connect timeout=None)'))"
+    },
+    {
+      "name": "dongdae_urgent",
+      "korean_name": "동대 긴급",
+      "initial_count": 510,
+      "current_count": 510,
+      "increase": 0,
+      "increase_percent": 0,
+      "recommendation_count": 0,
+      "comment_count": 0,
+      "post_date": null,
+      "post_title": null,
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:37:32",
+      "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128283",
+      "error": "HTTPSConnectionPool(host='gall.dcinside.com', port=443): Max retries exceeded with url: /board/view/?id=dongguk&no=128283 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gall.dcinside.com', port=443) at 0x7fbbf2ea6e90>, 'Connection to gall.dcinside.com timed out. (connect timeout=None)'))"
     },
     {
       "name": "feminism",
@@ -993,9 +995,10 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:18",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=686"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:39:47",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=feminism1&no=686",
+      "error": "HTTPSConnectionPool(host='gall.dcinside.com', port=443): Max retries exceeded with url: /mgallery/board/view/?id=feminism1&no=686 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gall.dcinside.com', port=443) at 0x7fbbf2ea7750>, 'Connection to gall.dcinside.com timed out. (connect timeout=None)'))"
     },
     {
       "name": "seoul national",
@@ -1008,9 +1011,10 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:19",
-      "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232135"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:42:02",
+      "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232135",
+      "error": "HTTPSConnectionPool(host='gall.dcinside.com', port=443): Max retries exceeded with url: /board/view/?id=seouluniversity&no=232135 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gall.dcinside.com', port=443) at 0x7fbbf2ea79d0>, 'Connection to gall.dcinside.com timed out. (connect timeout=None)'))"
     },
     {
       "name": "korea",
@@ -1023,9 +1027,10 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:20",
-      "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143463"
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:17",
+      "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143463",
+      "error": "HTTPSConnectionPool(host='gall.dcinside.com', port=443): Max retries exceeded with url: /board/view/?id=koreauniversity&no=143463 (Caused by ConnectTimeoutError(<HTTPSConnection(host='gall.dcinside.com', port=443) at 0x7fbbf2ea7c50>, 'Connection to gall.dcinside.com timed out. (connect timeout=None)'))"
     },
     {
       "name": "hongik",
@@ -1038,8 +1043,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:22",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:20",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195828"
     },
     {
@@ -1053,8 +1058,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:21",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202335"
     },
     {
@@ -1068,8 +1073,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:24",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:22",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=537"
     },
     {
@@ -1083,8 +1088,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:25",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:23",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156687"
     },
     {
@@ -1098,8 +1103,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:26",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:26",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309040"
     },
     {
@@ -1113,8 +1118,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:27",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:27",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=443988"
     },
     {
@@ -1128,8 +1133,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:29",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:30",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41186"
     },
     {
@@ -1143,8 +1148,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:30",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:31",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235766"
     },
     {
@@ -1158,8 +1163,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:31",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:32",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248682"
     },
     {
@@ -1173,8 +1178,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:32",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:33",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205667"
     },
     {
@@ -1188,8 +1193,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:32",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:34",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260392"
     },
     {
@@ -1203,8 +1208,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:33",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:35",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=465172"
     },
     {
@@ -1218,8 +1223,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:34",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:36",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36802"
     },
     {
@@ -1233,8 +1238,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:35",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:37",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22848"
     },
     {
@@ -1248,8 +1253,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:35",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:38",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22530"
     },
     {
@@ -1263,8 +1268,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:36",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:39",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9263"
     },
     {
@@ -1278,8 +1283,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:40",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:43",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=antifeminism&no=6379"
     },
     {
@@ -1293,8 +1298,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:46",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:50",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232624"
     },
     {
@@ -1308,8 +1313,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:46",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:50",
       "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143576"
     },
     {
@@ -1323,8 +1328,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:47",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:51",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235792"
     },
     {
@@ -1338,8 +1343,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:49",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:54",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=538"
     },
     {
@@ -1353,8 +1358,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:50",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:55",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309198"
     },
     {
@@ -1368,8 +1373,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:51",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:56",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260427"
     },
     {
@@ -1383,8 +1388,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:52",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:56",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202401"
     },
     {
@@ -1398,8 +1403,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:52",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:44:57",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444066"
     },
     {
@@ -1413,8 +1418,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:55",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:00",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=466418"
     },
     {
@@ -1428,8 +1433,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:55",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:01",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195876"
     },
     {
@@ -1443,8 +1448,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:56",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:02",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372601"
     },
     {
@@ -1458,8 +1463,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:57",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:03",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156824"
     },
     {
@@ -1473,8 +1478,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:38:59",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:05",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248760"
     },
     {
@@ -1488,8 +1493,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:00",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:06",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205779"
     },
     {
@@ -1503,8 +1508,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:01",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:07",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36916"
     },
     {
@@ -1518,8 +1523,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:01",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:08",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22870"
     },
     {
@@ -1533,8 +1538,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:02",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:10",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22558"
     },
     {
@@ -1548,8 +1553,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:03",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:10",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9279"
     },
     {
@@ -1563,8 +1568,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:07",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:15",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41262"
     },
     {
@@ -1578,8 +1583,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:07",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:15",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=466746"
     },
     {
@@ -1593,8 +1598,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:08",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:16",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232910"
     },
     {
@@ -1608,8 +1613,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:12",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:21",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=543"
     },
     {
@@ -1623,8 +1628,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:12",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:21",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156848"
     },
     {
@@ -1638,8 +1643,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:13",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:22",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260439"
     },
     {
@@ -1653,8 +1658,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:14",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:23",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444074"
     },
     {
@@ -1668,8 +1673,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:15",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:24",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22877"
     },
     {
@@ -1683,8 +1688,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:17",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:27",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248772"
     },
     {
@@ -1698,8 +1703,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:18",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:27",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205817"
     },
     {
@@ -1713,8 +1718,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:18",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:28",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195889"
     },
     {
@@ -1728,8 +1733,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:19",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:29",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202421"
     },
     {
@@ -1743,8 +1748,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:20",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:30",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309232"
     },
     {
@@ -1758,8 +1763,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:22",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:32",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41273"
     },
     {
@@ -1773,8 +1778,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:33",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235819"
     },
     {
@@ -1788,8 +1793,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:34",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36941"
     },
     {
@@ -1803,8 +1808,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:24",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:35",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22565"
     },
     {
@@ -1818,8 +1823,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:25",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:36",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9285"
     },
     {
@@ -1833,8 +1838,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:29",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:40",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=466795"
     },
     {
@@ -1848,8 +1853,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:29",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:41",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372643"
     },
     {
@@ -1863,8 +1868,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:30",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:41",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309239"
     },
     {
@@ -1878,8 +1883,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:32",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:44",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260440"
     },
     {
@@ -1893,8 +1898,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:33",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:45",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195896"
     },
     {
@@ -1908,8 +1913,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:34",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:45",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202425"
     },
     {
@@ -1923,8 +1928,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:35",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:46",
       "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143643"
     },
     {
@@ -1938,8 +1943,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:37",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:49",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248775"
     },
     {
@@ -1953,8 +1958,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:39",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:51",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235822"
     },
     {
@@ -1968,8 +1973,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:40",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:52",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=545"
     },
     {
@@ -1983,8 +1988,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:41",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:53",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444077"
     },
     {
@@ -1998,8 +2003,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:43",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:55",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22566"
     },
     {
@@ -2013,8 +2018,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:45",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:58",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22878"
     },
     {
@@ -2028,8 +2033,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:46",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:58",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232941"
     },
     {
@@ -2043,8 +2048,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:47",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:45:59",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9286"
     },
     {
@@ -2058,8 +2063,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:47",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:00",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156852"
     },
     {
@@ -2073,8 +2078,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:48",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:01",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36946"
     },
     {
@@ -2088,8 +2093,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:49",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:02",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205829"
     },
     {
@@ -2103,8 +2108,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:50",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:03",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=232994"
     },
     {
@@ -2118,8 +2123,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:50",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:03",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309252"
     },
     {
@@ -2133,8 +2138,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:51",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:04",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128409"
     },
     {
@@ -2148,8 +2153,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:52",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:05",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=466854"
     },
     {
@@ -2163,8 +2168,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:52",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:06",
       "url": "https://gall.dcinside.com/board/view/?id=sogang&no=649510"
     },
     {
@@ -2178,8 +2183,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:53",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:07",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235824"
     },
     {
@@ -2193,8 +2198,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:54",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:08",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22882"
     },
     {
@@ -2208,8 +2213,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:55",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:08",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156861"
     },
     {
@@ -2223,8 +2228,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:57",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:09",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372646"
     },
     {
@@ -2238,8 +2243,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:58",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:10",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248778"
     },
     {
@@ -2253,8 +2258,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:58",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:11",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=546"
     },
     {
@@ -2268,8 +2273,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:39:59",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:12",
       "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143658"
     },
     {
@@ -2283,8 +2288,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:00",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:13",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=univ&no=482"
     },
     {
@@ -2298,8 +2303,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:01",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:13",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260444"
     },
     {
@@ -2313,8 +2318,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:01",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:14",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444082"
     },
     {
@@ -2328,8 +2333,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:02",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:15",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9289"
     },
     {
@@ -2343,8 +2348,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:03",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:16",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195904"
     },
     {
@@ -2358,8 +2363,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:04",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:17",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202433"
     },
     {
@@ -2373,8 +2378,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:04",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:17",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41287"
     },
     {
@@ -2388,8 +2393,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:05",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:18",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205842"
     },
     {
@@ -2403,8 +2408,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:06",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:19",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36955"
     },
     {
@@ -2418,8 +2423,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:07",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:20",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22568"
     },
     {
@@ -2433,8 +2438,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:07",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:21",
       "url": "https://gall.dcinside.com/mini/board/view/?id=swu&no=34"
     },
     {
@@ -2448,8 +2453,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:08",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:22",
       "url": "https://gall.dcinside.com/board/view/?id=pusanu&no=652819"
     },
     {
@@ -2463,8 +2468,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:09",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:22",
       "url": "https://gall.dcinside.com/board/view/?id=dongau&no=426384"
     },
     {
@@ -2478,8 +2483,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:09",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:23",
       "url": "https://gall.dcinside.com/board/view/?id=pknu&no=344285"
     },
     {
@@ -2493,8 +2498,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:13",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:27",
       "url": "https://gall.dcinside.com/board/view/?id=gsnu&no=107102"
     },
     {
@@ -2508,8 +2513,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:14",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:28",
       "url": "https://gall.dcinside.com/board/view/?id=changwon&no=47239"
     },
     {
@@ -2523,8 +2528,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:16",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:31",
       "url": "https://gall.dcinside.com/board/view/?id=kaist&no=26667"
     },
     {
@@ -2538,8 +2543,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:18",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:33",
       "url": "https://gall.dcinside.com/board/view/?id=pcu&no=67703"
     },
     {
@@ -2553,8 +2558,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:19",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:34",
       "url": "https://gall.dcinside.com/board/view/?id=chonbuk&no=282011"
     },
     {
@@ -2568,8 +2573,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:21",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:36",
       "url": "https://gall.dcinside.com/board/view/?id=kmu&no=96173"
     },
     {
@@ -2583,8 +2588,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:22",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:37",
       "url": "https://gall.dcinside.com/board/view/?id=ynu&no=396115"
     },
     {
@@ -2598,8 +2603,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:38",
       "url": "https://gall.dcinside.com/board/view/?id=daegu&no=86628"
     },
     {
@@ -2613,8 +2618,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:25",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:40",
       "url": "https://gall.dcinside.com/board/view/?id=chonnam&no=261250"
     },
     {
@@ -2628,8 +2633,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:28",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:44",
       "url": "https://gall.dcinside.com/board/view/?id=inha&no=1182344"
     },
     {
@@ -2643,8 +2648,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:29",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:45",
       "url": "https://gall.dcinside.com/board/view/?id=incheon&no=158760"
     },
     {
@@ -2658,8 +2663,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:30",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:46",
       "url": "https://gall.dcinside.com/board/view/?id=ajou&no=676433"
     },
     {
@@ -2673,8 +2678,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:31",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:47",
       "url": "https://gall.dcinside.com/board/view/?id=dankook&no=328290"
     },
     {
@@ -2688,8 +2693,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:33",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:49",
       "url": "https://gall.dcinside.com/board/view/?id=kyonggi&no=121471"
     },
     {
@@ -2703,8 +2708,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:35",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:52",
       "url": "https://gall.dcinside.com/board/view/?id=hallym&no=33170"
     },
     {
@@ -2718,8 +2723,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:36",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:52",
       "url": "https://gall.dcinside.com/board/view/?id=cheju&no=33561"
     },
     {
@@ -2733,8 +2738,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:37",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:53",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260453"
     },
     {
@@ -2748,8 +2753,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:37",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:54",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235844"
     },
     {
@@ -2763,8 +2768,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:39",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:56",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195924"
     },
     {
@@ -2778,8 +2783,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:40",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:57",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372660"
     },
     {
@@ -2793,8 +2798,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:41",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:58",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205884"
     },
     {
@@ -2808,8 +2813,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:42",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:46:59",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=233126"
     },
     {
@@ -2823,8 +2828,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:42",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:00",
       "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143704"
     },
     {
@@ -2838,8 +2843,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:43",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:01",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156889"
     },
     {
@@ -2853,8 +2858,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:44",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:01",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22891"
     },
     {
@@ -2868,8 +2873,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:45",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:02",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22582"
     },
     {
@@ -2883,8 +2888,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:48",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:06",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248789"
     },
     {
@@ -2898,8 +2903,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:49",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:07",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9308"
     },
     {
@@ -2913,8 +2918,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:50",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:08",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41313"
     },
     {
@@ -2928,8 +2933,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:50",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:09",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444097"
     },
     {
@@ -2943,8 +2948,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:51",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:09",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202451"
     },
     {
@@ -2958,8 +2963,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:52",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:10",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309286"
     },
     {
@@ -2973,8 +2978,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:53",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:11",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36982"
     },
     {
@@ -2988,8 +2993,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:55",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:13",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=467073"
     },
     {
@@ -3003,8 +3008,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:56",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:14",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=550"
     },
     {
@@ -3018,8 +3023,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:56",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:15",
       "url": "https://gall.dcinside.com/board/view/?id=hufs&no=248792"
     },
     {
@@ -3033,8 +3038,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:57",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:16",
       "url": "https://gall.dcinside.com/board/view/?id=dongduk&no=467095"
     },
     {
@@ -3048,8 +3053,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:58",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:17",
       "url": "https://gall.dcinside.com/board/view/?id=seouluniversity&no=233155"
     },
     {
@@ -3063,8 +3068,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:40:58",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:18",
       "url": "https://gall.dcinside.com/board/view/?id=dankook&no=328295"
     },
     {
@@ -3078,8 +3083,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:04",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:23",
       "url": "https://gall.dcinside.com/board/view/?id=gsnu&no=107191"
     },
     {
@@ -3093,8 +3098,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:04",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:24",
       "url": "https://gall.dcinside.com/board/view/?id=changwon&no=47385"
     },
     {
@@ -3108,8 +3113,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:06",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:27",
       "url": "https://gall.dcinside.com/board/view/?id=kaist&no=26670"
     },
     {
@@ -3123,8 +3128,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:07",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:27",
       "url": "https://gall.dcinside.com/board/view/?id=pcu&no=67706"
     },
     {
@@ -3138,8 +3143,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:08",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:28",
       "url": "https://gall.dcinside.com/board/view/?id=chonbuk&no=282042"
     },
     {
@@ -3153,8 +3158,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:10",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:31",
       "url": "https://gall.dcinside.com/board/view/?id=kmu&no=96178"
     },
     {
@@ -3168,8 +3173,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:11",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:31",
       "url": "https://gall.dcinside.com/board/view/?id=ynu&no=396121"
     },
     {
@@ -3183,8 +3188,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:12",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:32",
       "url": "https://gall.dcinside.com/board/view/?id=daegu&no=86632"
     },
     {
@@ -3198,8 +3203,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:12",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:33",
       "url": "https://gall.dcinside.com/board/view/?id=kyonggi&no=121476"
     },
     {
@@ -3213,8 +3218,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:13",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:34",
       "url": "https://gall.dcinside.com/board/view/?id=duksung&no=22893"
     },
     {
@@ -3228,8 +3233,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:14",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:35",
       "url": "https://gall.dcinside.com/board/view/?id=chonnam&no=261281"
     },
     {
@@ -3243,8 +3248,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:15",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:36",
       "url": "https://gall.dcinside.com/board/view/?id=chosun&no=197314"
     },
     {
@@ -3258,8 +3263,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:15",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:36",
       "url": "https://gall.dcinside.com/board/view/?id=incheon&no=158891"
     },
     {
@@ -3273,8 +3278,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:16",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:37",
       "url": "https://gall.dcinside.com/board/view/?id=ajou&no=676437"
     },
     {
@@ -3288,8 +3293,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:17",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:38",
       "url": "https://gall.dcinside.com/board/view/?id=hallym&no=33171"
     },
     {
@@ -3303,8 +3308,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:17",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:39",
       "url": "https://gall.dcinside.com/board/view/?id=koreauniversity&no=143718"
     },
     {
@@ -3318,8 +3323,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:18",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:40",
       "url": "https://gall.dcinside.com/board/view/?id=swu&no=9312"
     },
     {
@@ -3333,8 +3338,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:19",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:40",
       "url": "https://gall.dcinside.com/board/view/?id=pusanu&no=652838"
     },
     {
@@ -3348,8 +3353,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:44",
       "url": "https://gall.dcinside.com/board/view/?id=yonseiuniversity&no=156897"
     },
     {
@@ -3363,8 +3368,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:23",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:45",
       "url": "https://gall.dcinside.com/board/view/?id=cau&no=372666"
     },
     {
@@ -3378,8 +3383,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:24",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:46",
       "url": "https://gall.dcinside.com/board/view/?id=hongik&no=195932"
     },
     {
@@ -3393,8 +3398,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:25",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:47",
       "url": "https://gall.dcinside.com/board/view/?id=hanyang&no=202453"
     },
     {
@@ -3408,8 +3413,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:26",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:48",
       "url": "https://gall.dcinside.com/board/view/?id=ewhawomans_univ&no=41322"
     },
     {
@@ -3423,8 +3428,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:28",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:50",
       "url": "https://gall.dcinside.com/board/view/?id=cheju&no=33568"
     },
     {
@@ -3438,8 +3443,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:30",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:53",
       "url": "https://gall.dcinside.com/board/view/?id=sungshin&no=36989"
     },
     {
@@ -3453,8 +3458,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:31",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:53",
       "url": "https://gall.dcinside.com/board/view/?id=sejong&no=260456"
     },
     {
@@ -3468,8 +3473,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:33",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:56",
       "url": "https://gall.dcinside.com/board/view/?id=khu&no=444103"
     },
     {
@@ -3483,8 +3488,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:34",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:57",
       "url": "https://gall.dcinside.com/board/view/?id=sookmyungwomans_univ&no=22584"
     },
     {
@@ -3498,8 +3503,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:35",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:47:57",
       "url": "https://gall.dcinside.com/board/view/?id=uos&no=235849"
     },
     {
@@ -3513,8 +3518,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:37",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:00",
       "url": "https://gall.dcinside.com/board/view/?id=konkuk&no=205900"
     },
     {
@@ -3528,8 +3533,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:37",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:01",
       "url": "https://gall.dcinside.com/board/view/?id=pknu&no=344704"
     },
     {
@@ -3543,8 +3548,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:40",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:03",
       "url": "https://gall.dcinside.com/board/view/?id=skku&no=309293"
     },
     {
@@ -3558,8 +3563,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:40",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:04",
       "url": "https://gall.dcinside.com/board/view/?id=dongau&no=426390"
     },
     {
@@ -3573,8 +3578,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:41",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:05",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=552"
     },
     {
@@ -3588,8 +3593,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:42",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:06",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=knua&no=556"
     },
     {
@@ -3603,8 +3608,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:44",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:08",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=128569"
     },
     {
@@ -3618,8 +3623,8 @@
       "comment_count": 0,
       "post_date": null,
       "post_title": null,
-      "last_accessed": "2026-01-21",
-      "last_updated": "2026-01-22 04:41:55",
+      "last_accessed": "2026-01-22",
+      "last_updated": "2026-01-23 04:48:20",
       "url": "https://gall.dcinside.com/board/view/?id=dongguk&no=129026"
     }
   ]
