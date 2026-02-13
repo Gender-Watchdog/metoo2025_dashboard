@@ -2,61 +2,61 @@ document.addEventListener('DOMContentLoaded', () => {
     loadData();
 
     // Setup filter functionality
-    const filterInput = document.getElementById('filter-input');
-    if (filterInput) {
-        filterInput.addEventListener('keyup', filterTable);
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', filterTable);
+    }
+    
+    // Sort Select Listener
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+             renderTable(universityData);
+        });
+    }
+
+    // Refresh Btn (GitHub Link)
+    const refreshBtn = document.getElementById('refresh-btn');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+            window.open('https://github.com/genderwatchdog1/metoo2025_dashboard', '_blank');
+        });
     }
 });
 
-let universityData = {};
+let universityData = [];
 
 async function loadData() {
     try {
         const response = await fetch('js/university_data.json');
-        universityData = await response.json();
-        renderTable(Object.values(universityData));
+        const rawData = await response.json();
+        
+        // Handle different possible JSON structures
+        if (Array.isArray(rawData)) {
+            universityData = rawData;
+        } else if (rawData.universities && Array.isArray(rawData.universities)) {
+            universityData = rawData.universities;
+        } else {
+            // Fallback: object of objects
+            universityData = Object.values(rawData);
+        }
+
+        renderTable(universityData);
+        updateStatistics(universityData);
     } catch (error) {
         console.error('Error loading data:', error);
-        document.getElementById('error-display').style.display = 'block';
-        document.getElementById('error-display').textContent = 'Error loading dashboard data.';
+        const errorDisplay = document.getElementById('error-display');
+        if (errorDisplay) {
+            errorDisplay.style.display = 'block';
+            errorDisplay.textContent = 'Error loading dashboard data.';
+        }
     }
 }
 
-function renderTable(data, sortField = 'default') {
-    const tableBody = document.querySelector('tbody');
-    tableBody.innerHTML = '';
-
-    // Sort Logic
-    // Default: Status (Active > Removed), then Current Views (Desc)
-    data.sort((a, b) => {
-        // 1. Status Priority: Active (1) > Removed (0)
-        const statusA = a.status === 'Active' ? 1 : 0;
-        const statusB = b.status === 'Active' ? 1 : 0;
-
-        if (statusA !== statusB) {
-            return statusB - statusA; // Active first
-        }
-
-        // 2. Secondary Sort: Views (High to Low)
-        // Ensure numbers
-        const viewA = parseInt(a.current_views) || 0;
-        const viewB = parseInt(b.current_views) || 0;
-        
-        // If both removed, maybe sort by Max Views?
-        if (statusA === 0) {
-             const maxA = parseInt(a.max_views) || 0;
-             const maxB = parseInt(b.max_views) || 0;
-             return maxB - maxA;
-        }
-
-        return viewB - viewA;
-    });
-
-    // Populate Metrics
+function updateStatistics(data) {
     let totalViews = 0;
     let activePosts = 0;
     let totalIncrease = 0;
-    let activeItems = [];
     
     data.forEach(item => {
         if (item.status === 'Active') {
@@ -65,90 +65,186 @@ function renderTable(data, sortField = 'default') {
             totalViews += curr;
             activePosts++;
             totalIncrease += (curr - init);
-            activeItems.push(item);
         }
     });
-    
-    // Update Stats UI
-    const totalViewsEl = document.querySelector('.total-views p');
+
+    const totalViewsEl = document.getElementById('total-current-views');
     if (totalViewsEl) totalViewsEl.textContent = totalViews.toLocaleString();
     
-    const totalIncreaseEl = document.querySelector('.total-increase p');
-    if (totalIncreaseEl) totalIncreaseEl.textContent = `+${totalIncrease.toLocaleString()}`;
-    if (totalIncrease > 0 && totalIncreaseEl) totalIncreaseEl.style.color = '#8338ec'; // Use tertiary color directly
+    const totalIncreaseEl = document.getElementById('total-increase');
+    if (totalIncreaseEl) {
+        totalIncreaseEl.textContent = `+${totalIncrease.toLocaleString()}`;
+        if (totalIncrease > 0) totalIncreaseEl.style.color = '#8338ec';
+    }
 
-    const avgIncreaseEl = document.querySelector('.avg-increase p');
+    const avgIncreaseEl = document.getElementById('avg-increase');
     if (avgIncreaseEl) {
         const avg = activePosts > 0 ? (totalIncrease / activePosts).toFixed(1) : 0;
         avgIncreaseEl.textContent = `+${avg}`;
     }
+    
+    // Update timestamp
+    const now = new Date();
+    const dateStr = now.toISOString().replace('T', ' ').substring(0, 19);
+    const lastUpdatedSpan = document.getElementById('last-updated');
+    if (lastUpdatedSpan) lastUpdatedSpan.textContent = `Last updated: ${dateStr}`;
+    const footerDate = document.getElementById('footer-updated-date');
+    if (footerDate) footerDate.textContent = dateStr;
+}
 
-    // Update Chart
-    renderChart(activeItems);
+function renderTable(data) {
+    const tableBody = document.getElementById('table-body');
+    if (!tableBody) return;
+    tableBody.innerHTML = '';
 
-    data.forEach(item => {
+    const sortSelect = document.getElementById('sort-select');
+    const sortValue = sortSelect ? sortSelect.value : 'increase-desc';
+
+    // Filter Logic
+    const searchInput = document.getElementById('search-input');
+    const filterText = searchInput ? searchInput.value.toLowerCase() : '';
+    
+    let filteredData = data.filter(item => {
+        // Handle field naming variations (name vs english_name)
+        const name = (item.name || item.english_name || '').toLowerCase();
+        const korean = (item.korean_name || '').toLowerCase();
+        const title = (item.post_title || '').toLowerCase();
+        return name.includes(filterText) || korean.includes(filterText) || title.includes(filterText);
+    });
+
+    // Sort Logic
+    // PRIMARY: Active > Removed
+    // SECONDARY: Selected Sort Criteria
+    filteredData.sort((a, b) => {
+        // 1. Status Priority: Active (1) > Removed (0)
+        const statusA = a.status === 'Active' ? 1 : 0;
+        const statusB = b.status === 'Active' ? 1 : 0;
+
+        if (statusA !== statusB) {
+            return statusB - statusA; // Active first
+        }
+
+        // 2. Secondary Sort based on Dropdown
+        const getVal = (item, field) => {
+            if (field === 'increase') {
+                const curr = parseInt(item.current_views) || 0; 
+                const init = parseInt(item.initial_views) || 0;
+                return curr - init;
+            }
+            if (field === 'current') return parseInt(item.current_views) || 0;
+            if (field === 'recommend') return parseInt(item.recommendations || item.recommendation_count) || 0;
+            if (field === 'comment') return parseInt(item.comments || item.comment_count) || 0;
+            return 0;
+        };
+
+        const getName = (item) => (item.name || item.english_name || '').toLowerCase();
+
+        switch (sortValue) {
+            case 'increase-desc': return getVal(b, 'increase') - getVal(a, 'increase');
+            case 'increase-asc': return getVal(a, 'increase') - getVal(b, 'increase');
+            case 'current-desc': return getVal(b, 'current') - getVal(a, 'current');
+            case 'current-asc': return getVal(a, 'current') - getVal(b, 'current');
+            case 'recommend-desc': return getVal(b, 'recommend') - getVal(a, 'recommend');
+            case 'comment-desc': return getVal(b, 'comment') - getVal(a, 'comment');
+            case 'name-asc': return getName(a).localeCompare(getName(b));
+            case 'name-desc': return getName(b).localeCompare(getName(a));
+            default: return getVal(b, 'increase') - getVal(a, 'increase');
+        }
+    });
+
+    // Update Chart with Active Items Only (top 10 based on sort)
+    // Filter active items for the chart to match expected visual
+    const activeItems = filteredData.filter(i => i.status === 'Active');
+    renderChart(activeItems.slice(0, 10));
+
+    // Render Rows
+    filteredData.forEach(item => {
         const row = document.createElement('tr');
         
-        // Row styling for Removed
+        // Removed Status Styling
         if (item.status === 'Removed') {
             row.style.opacity = '0.6';
             row.style.backgroundColor = 'rgba(255, 0, 0, 0.05)';
         }
 
-        // Date Posted Tooltip
-        if (item.post_date) {
-            row.setAttribute('title', `Posted: ${item.post_date}`);
-        }
-
-        // 1. Status Column
+        // --- Status Cell ---
         const statusCell = document.createElement('td');
         if (item.status === 'Active') {
-            statusCell.innerHTML = '<span style="color: #4caf50; font-weight: bold;">✔ Active</span>';
+            statusCell.innerHTML = '<span style="color: green; font-weight: bold;"><i class="fas fa-check-circle"></i> Active</span>';
         } else {
-            statusCell.innerHTML = `<span style="color: #f44336;">✘ Removed</span><br><span style="font-size:0.8em; color:#888;">${item.removed_date || ''}</span>`;
+            statusCell.innerHTML = '<span style="color: red; font-weight: bold;"><i class="fas fa-times-circle"></i> Removed</span>';
         }
-        statusCell.style.textAlign = 'center';
         row.appendChild(statusCell);
 
-        // 2. English Name
-        const nameEnCell = document.createElement('td');
-        nameEnCell.textContent = item.name_en;
-        row.appendChild(nameEnCell);
-
-        // 3. Korean Name
-        const nameKrCell = document.createElement('td');
-        nameKrCell.textContent = item.name_kr;
-        row.appendChild(nameKrCell);
-
-        // 4. Max Views (formerly Initial) - Renaming conceptual purpose
-        const maxViewsCell = document.createElement('td');
-        maxViewsCell.textContent = (item.max_views || 0).toLocaleString();
-        row.appendChild(maxViewsCell);
-
-        // 5. Current Views
-        const currViewsCell = document.createElement('td');
-        if (item.status === 'Active') {
-            currViewsCell.textContent = (item.current_views || 0).toLocaleString();
-            currViewsCell.style.fontWeight = 'bold';
-            currViewsCell.style.color = '#e0e0e0';
-        } else {
-             currViewsCell.textContent = "-";
+        // --- University Columns ---
+        const nameCell = document.createElement('td');
+        const englishName = item.name || item.english_name || 'N/A';
+        nameCell.textContent = englishName;
+        // Tooltip for post date
+        if (item.post_date) {
+             nameCell.title = `Posted: ${item.post_date}`;
         }
-        row.appendChild(currViewsCell);
+        row.appendChild(nameCell);
 
-        // 6. Recs / Comments
+        const koreanCell = document.createElement('td');
+        koreanCell.textContent = item.korean_name || '';
+        row.appendChild(koreanCell);
+
+        // --- Metrics ---
+        // Initial Views (Historical Context)
+        const initCell = document.createElement('td');
+        initCell.textContent = (parseInt(item.initial_views) || 0).toLocaleString();
+        row.appendChild(initCell);
+
+        // Current Views
+        const currCell = document.createElement('td');
+        if (item.status === 'Active') {
+            currCell.textContent = (parseInt(item.current_views) || 0).toLocaleString();
+            currCell.style.fontWeight = 'bold';
+        } else {
+            currCell.textContent = '-'; 
+            currCell.title = "Post Removed";
+        }
+        row.appendChild(currCell);
+
+        // Increase
+        const increaseCell = document.createElement('td');
+        if (item.status === 'Active') {
+            const curr = parseInt(item.current_views) || 0;
+            const init = parseInt(item.initial_views) || 0;
+            const inc = curr - init;
+            increaseCell.textContent = `+${inc.toLocaleString()}`;
+            if (inc > 0) increaseCell.style.color = '#8338ec'; // Tertiary
+        } else {
+            increaseCell.textContent = '-';
+        }
+        row.appendChild(increaseCell);
+
+        // Recs / Comments
         const engagementCell = document.createElement('td');
-        engagementCell.textContent = `${item.recs || 0} / ${item.comments || 0}`;
+        const recs = item.recommendations || item.recommendation_count || 0;
+        const coms = item.comments || item.comment_count || 0;
+        engagementCell.innerHTML = `<div><i class="far fa-thumbs-up"></i> ${recs}</div><div><i class="far fa-comment-dots"></i> ${coms}</div>`;
         row.appendChild(engagementCell);
 
-        // 7. Actions
+        // --- Actions ---
         const actionCell = document.createElement('td');
-        const link = document.createElement('a');
-        link.href = item.url;
-        link.textContent = 'View Post';
-        link.className = 'btn-view';
-        link.target = '_blank';
-        actionCell.appendChild(link);
+        if (item.url) {
+            const btn = document.createElement('a');
+            btn.href = item.url;
+            btn.target = '_blank';
+            btn.textContent = 'View Post';
+            btn.className = 'btn-view';
+            btn.style.display = 'inline-block';
+            btn.style.padding = '5px 10px';
+            btn.style.backgroundColor = '#3a86ff';
+            btn.style.color = '#fff';
+            btn.style.borderRadius = '4px';
+            btn.style.fontSize = '0.8rem';
+            btn.style.textDecoration = 'none';
+            
+            actionCell.appendChild(btn);
+        }
         row.appendChild(actionCell);
 
         tableBody.appendChild(row);
@@ -157,25 +253,19 @@ function renderTable(data, sortField = 'default') {
 
 let viewsChart = null;
 
-function renderChart(activeItems) {
-    const ctx = document.getElementById('viewsChart');
+function renderChart(data) {
+    const ctx = document.getElementById('views-chart');
     if (!ctx) return;
 
-    // Sort by Increase (Desc) for chart
-    activeItems.sort((a, b) => {
-        const incA = (parseInt(a.current_views) || 0) - (parseInt(a.initial_views) || 0);
-        const incB = (parseInt(b.current_views) || 0) - (parseInt(b.initial_views) || 0);
-        return incB - incA;
-    });
+    // Take top 10 from the passed data (which might be sorted/filtered)
+    // Assuming data passed here is already active-only or sorted appropriately
+    const topData = data.slice(0, 10);
+    
+    const labels = topData.map(d => d.korean_name || d.name);
+    const initialData = topData.map(d => parseInt(d.initial_views) || 0);
+    const currentData = topData.map(d => parseInt(d.current_views) || 0);
+    const recsData = topData.map(d => parseInt(d.recommendations || d.recommendation_count) || 0);
 
-    const top10 = activeItems.slice(0, 10);
-    const labels = top10.map(i => i.name_kr || i.name_en);
-    const initialData = top10.map(i => parseInt(i.initial_views) || 0);
-    const currentData = top10.map(i => parseInt(i.current_views) || 0);
-    
-    // Calculate increases for 'stacked' visual or just show current vs initial
-    // In ChartJS, a second dataset overlays.
-    
     if (viewsChart) {
         viewsChart.destroy();
     }
@@ -188,64 +278,68 @@ function renderChart(activeItems) {
                 {
                     label: 'Initial Views',
                     data: initialData,
-                    backgroundColor: 'rgba(100, 149, 237, 0.7)',
-                    borderColor: 'rgba(100, 149, 237, 1)',
+                    backgroundColor: 'rgba(58, 134, 255, 0.5)',
+                    borderColor: 'rgba(58, 134, 255, 1)',
                     borderWidth: 1
                 },
                 {
                     label: 'Current Views',
                     data: currentData,
-                    backgroundColor: 'rgba(187, 134, 252, 0.7)',
-                    borderColor: 'rgba(187, 134, 252, 1)',
+                    backgroundColor: 'rgba(131, 56, 236, 0.6)', 
+                    borderColor: 'rgba(131, 56, 236, 1)',
                     borderWidth: 1
+                },
+                {
+                    label: 'Recommendations',
+                    data: recsData,
+                    backgroundColor: 'rgba(255, 0, 110, 0.6)',
+                    borderColor: 'rgba(255, 0, 110, 1)',
+                    borderWidth: 1,
+                    type: 'line',
+                    yAxisID: 'y1'
                 }
             ]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Top 10 Active Universities by Views',
-                    color: '#e0e0e0',
-                    font: { size: 16 }
-                },
-                legend: {
-                    labels: { color: '#e0e0e0' }
-                }
-            },
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: '#333' },
-                    ticks: { color: '#e0e0e0' }
+                    title: {
+                        display: true,
+                        text: 'Count'
+                    }
+                },
+                y1: {
+                    type: 'linear',
+                    display: false,
+                    position: 'right',
+                    grid: {
+                        drawOnChartArea: false,
+                    },
                 },
                 x: {
-                    grid: { color: '#333' },
-                    ticks: { color: '#e0e0e0' }
+                    title: {
+                        display: true,
+                        text: 'University'
+                    }
                 }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Top 10 Active Universities by Views'
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                }
+            },
+            interaction: {
+                mode: 'index',
+                intersect: false,
             }
         }
     });
-}
-
-function filterTable() {
-    const input = document.getElementById('filter-input');
-    const filter = input.value.toUpperCase();
-    const rows = document.querySelector('tbody').getElementsByTagName('tr');
-
-    for (let i = 0; i < rows.length; i++) {
-        const enName = rows[i].getElementsByTagName('td')[1];
-        const krName = rows[i].getElementsByTagName('td')[2];
-        if (enName || krName) {
-            const txtValueEn = enName.textContent || enName.innerText;
-            const txtValueKr = krName.textContent || krName.innerText;
-            if (txtValueEn.toUpperCase().indexOf(filter) > -1 || txtValueKr.toUpperCase().indexOf(filter) > -1) {
-                rows[i].style.display = "";
-            } else {
-                rows[i].style.display = "none";
-            }
-        }
-    }
 }

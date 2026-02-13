@@ -1,99 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gender Watchdog Dashboard</title>
-    <!-- Styles -->
+    <title>#MeTooKorea2025 Dashboard - Real-time University Sexual Violence Monitoring | Gender Watchdog</title>
+    <meta name="description" content="Real-time dashboard monitoring engagement with #MeTooKorea2025 posts about sexual violence cover-ups across Korean universities. Track views, engagement, and awareness campaigns by university on DC Inside.">
+    <meta name="keywords" content="Gender Watchdog, MeTooKorea2025, DC Inside, Korean university sexual violence, Dongguk University, sexual violence monitoring, university sexual harassment, Korean women's rights, sexual violence prevention, university accountability, Title IX Korea, Korean university reform">
+    
+    <!-- Canonical and language tags -->
+    <link rel="canonical" href="https://dashboard.genderwatchdog.org/">
+    <link rel="alternate" href="https://dashboard.genderwatchdog.org/" hreflang="ko">
+    <meta http-equiv="Content-Language" content="ko">
+    
+    <!-- Sitemap reference -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dashboard.genderwatchdog.org/">
+    <meta property="og:title" content="#MeTooKorea2025 Dashboard - Real-time University Sexual Violence Monitoring">
+    <meta property="og:description" content="Real-time dashboard monitoring engagement with #MeTooKorea2025 posts about sexual violence cover-ups across Korean universities. Track views, engagement, and awareness campaigns by university.">
+    <meta property="og:image" content="https://dashboard.genderwatchdog.org/imgs/gender-watchdog-icon-04142025.png">
+    <meta property="og:site_name" content="Gender Watchdog Dashboard">
+    <meta name="author" content="Gender Watchdog">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dashboard.genderwatchdog.org/">
+    <meta property="twitter:title" content="#MeTooKorea2025 Dashboard - Real-time University Sexual Violence Monitoring">
+    <meta property="twitter:description" content="Real-time dashboard monitoring engagement with #MeTooKorea2025 posts about sexual violence cover-ups across Korean universities.">
+    <meta property="twitter:image" content="https://dashboard.genderwatchdog.org/imgs/gender-watchdog-icon-04142025.png">
+    <meta property="twitter:site" content="@Gender_Watchdog">
+    <meta property="twitter:creator" content="@Gender_Watchdog">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicons/gender_watchdog_favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicons/gender_watchdog_favicon_16x16.png">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_16x16.png" sizes="16x16">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_48x48.png" sizes="48x48">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_64x64.png" sizes="64x64">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_128x128.png" sizes="128x128">
+    <link rel="icon" href="imgs/favicons/gender_watchdog_favicon_256x256.png" sizes="256x256">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="VDVWSPXF" defer></script>
+    <!-- / Fathom -->
+    
     <style>
-        /* Minimal inline override for status column */
-        th:first-child, td:first-child {
-            width: 100px;
+        /* Minimal specific styling for the new Status column */
+        #universities-table th:first-child, 
+        #universities-table td:first-child {
+            width: 110px;
             text-align: center;
         }
     </style>
+
+    <script>
+        // Add error handling for script loading
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error("Error occurred: ", message, source, lineno, colno, error);
+            document.getElementById('error-display').textContent = 'Error: ' + message;
+            document.getElementById('error-display').style.display = 'block';
+        };
+    </script>
+    
+    <!-- Structured Data: Organization and WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gender Watchdog",
+      "url": "https://dashboard.genderwatchdog.org/",
+      "logo": "https://dashboard.genderwatchdog.org/imgs/gender-watchdog-icon-04142025.png",
+      "sameAs": [
+        "https://genderwatchdog.org/",
+        "https://x.com/Gender_Watchdog",
+        "https://www.youtube.com/@GenderWatchdog"
+      ],
+      "description": "Gender Watchdog operates the #MeTooKorea2025 dashboard tracking engagement of advocacy posts on DC Inside across Korean universities."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "#MeTooKorea2025 Dashboard | Gender Watchdog",
+      "url": "https://dashboard.genderwatchdog.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dashboard.genderwatchdog.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Gender Watchdog"
+        },
+        {
+          "@type": "Thing",
+          "name": "MeTooKorea2025"
+        },
+        {
+          "@type": "Thing",
+          "name": "DC Inside"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="container header-flex">
             <img src="imgs/gender-watchdog-icon-04142025.png" alt="Gender Watchdog Icon" class="header-logo">
             <div class="header-title-group">
-                <h1>Gender Watchdog Dashboard</h1>
-                <p>Monitoring University Responses in Real-Time</p>
+                <h1><i class="fas fa-chart-line"></i> #MeTooKorea2025 Dashboard</h1>
+                <p>Monitoring post views on <a href="https://www.dcinside.com/" target="_blank" rel="noopener">https://www.dcinside.com/</a> by university</p>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <!-- Error Display -->
+        <!-- Add error message display area -->
         <div id="error-display" style="display: none; color: red; background-color: #ffeeee; padding: 10px; margin-bottom: 10px; border-radius: 5px;"></div>
-
+        
         <section class="dashboard-controls">
-            <!-- Nav / Refresh -->
             <div class="refresh-section">
-                <a href="docs/purge_dashboard.html" class="btn-refresh" style="background-color: #bb86fc; color: #121212; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 5px;">View Purge Analysis</a>
+                <button id="refresh-btn" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </button>
+                <span id="last-updated"></span>
             </div>
-            
-            <!-- Filter -->
             <div class="filter-section">
-                <input type="text" id="filter-input" placeholder="Search University...">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search universities or post titles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="increase-desc">Most Views Increase</option>
+                        <option value="increase-asc">Least Views Increase</option>
+                        <option value="current-desc">Highest Current Views</option>
+                        <option value="current-asc">Lowest Current Views</option>
+                        <option value="recommend-desc">Most Recommendations</option>
+                        <option value="comment-desc">Most Comments</option>
+                        <option value="name-asc">University Name (A-Z)</option>
+                        <option value="name-desc">University Name (Z-A)</option>
+                    </select>
+                </div>
             </div>
         </section>
 
-        <!-- Stats Cards -->
         <section class="stats-summary">
             <div class="stat-card total-views">
                 <h3>Total Current Views</h3>
-                <p>0</p>
+                <p id="total-current-views">0</p>
             </div>
             <div class="stat-card total-increase">
                 <h3>Total Views Increase</h3>
-                <p>+0</p>
+                <p id="total-increase">0</p>
             </div>
             <div class="stat-card avg-increase">
                 <h3>Average Views Increase</h3>
-                <p>+0</p>
+                <p id="avg-increase">0</p>
             </div>
         </section>
 
-        <!-- Chart -->
         <section class="data-visualization">
-            <div class="chart-container" style="position: relative; height:400px; width:100%; margin-bottom: 2rem;">
-                 <canvas id="viewsChart"></canvas> 
+            <div class="chart-container">
+                <canvas id="views-chart"></canvas>
             </div>
         </section>
 
-        <!-- Main Table -->
         <section class="data-table">
             <h2>University Data</h2>
             <div class="table-container">
-                <table id="university-table">
+                <table id="universities-table">
                     <thead>
                         <tr>
                             <th>Status</th>
                             <th>University (English)</th>
                             <th>University (Korean)</th>
-                            <th>Max Views (History)</th>
+                            <th>Initial Views</th>
+                            <!-- Removed Current Views to save space? No, keep it. -->
+                            <!-- The Jan 8 table had 7 columns. We now have 8. -->
                             <th>Current Views</th>
+                            <th>Views Increase</th>
                             <th>Recs / Comments</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- Data inserted by JS -->
+                    <tbody id="table-body">
+                        <tr class="loading-row">
+                            <td colspan="8">Loading data...</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-
     </main>
+
+    <!-- Support & Endorsements Section -->
+    <div class="endorsement-section">
+        <h3><i class="fas fa-bullhorn"></i> Support & Endorsements</h3>
+        <blockquote>
+            "We are honored to receive support from End Rape On Campus (@EndRapeOnCampus) in exposing the systemic sexual violence cover-up at Dongguk University. Thank you EROC for amplifying our efforts, providing solidarity, and advising on advocacy."
+        </blockquote>
+        <p style="margin-top: 0.5em; font-size: 1em; color: #444;">
+            Special thanks to DC Inside for allowing us to monitor and share engagement data from our own posts for transparency and advocacy purposes.<br>
+            (특별히 감사드립니다: DC Inside에서 저희 게시글의 조회수 및 참여 데이터를 모니터링하고 공유할 수 있도록 허락해주셨습니다. 투명성과 옹호 활동을 위해 사용됩니다.)
+        </p>
+        <footer>
+            <a href="https://x.com/Gender_Watchdog/status/1917483599189926092" target="_blank" rel="noopener">
+                View the pinned tweet
+            </a>
+        </footer>
+    </div>
+  
+    <!-- Links & Resources Section -->
+    <section class="links-resources-section">
+        <div class="container">
+            <h3>Links & Resources</h3>
+            <ul class="links-list">
+                <li><a href="https://genderwatchdog.org/" target="_blank" rel="noopener">Dongguk University: Timeline of Sexual Violence & Institutional Betrayal</a> &ndash; Documenting a decade of institutional failure and negligence (2008-2025)</li>
+                <li><a href="https://metookorea2025.genderwatchdog.org/" target="_blank" rel="noopener">#MeTooKorea2025 Timeline Website</a> &ndash; Systemic sexual violence, cover-ups, and Title IX risks across Korean universities and the film industry (K-Arts, Chung-Ang, Hongik, Sidus FNH, Netflix, and more)</li>
+                <li><a href="https://blog.genderwatchdog.org/" target="_blank" rel="noopener">Gender Watchdog Blog</a> &ndash; Documentation of Dongguk University's sexual violence crisis, public funds misuse, and institutional betrayal</li>
+                <li><a href="https://x.com/Gender_Watchdog" target="_blank" rel="noopener">X.com (Twitter): @Gender_Watchdog</a></li>
+                <li><a href="https://www.youtube.com/@GenderWatchdog/shorts" target="_blank" rel="noopener">YouTube: Gender Watchdog Channel</a></li>
+            </ul>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Gender Watchdog. All rights reserved.</p>
+            <div class="footer-logo">
+                <img src="imgs/favicons/gender_watchdog_favicon_48x48.png" alt="Gender Watchdog Logo">
+            </div>
+            <div class="footer-text">
+                <span>
+                    This dashboard focuses on falsified partnerships at Dongguk University (our main focus) along with numerous other Korean universities nationwide, indicating a systemic failure by the MOE, QS Rankings, and the universities involved in data verification. It exposes widespread breaches of contract safety clauses, underscored by the 2020 KWDI report showing a 61.5% sexual violence rate in arts, culture, and sports faculties across Korea.
+                </span>
+                <p>
+                    This site uses privacy-focused <a href="https://usefathom.com/ref/UKSUATNV" target="_blank" rel="noopener">Fathom Analytics</a> which is GDPR compliant and does not track personal data.
+                </p>
+                <p style="font-size:0.9rem; opacity:0.8;">
+                    All data last updated: <span id="footer-updated-date"></span>
+                </p>
+            </div>
         </div>
     </footer>
 
