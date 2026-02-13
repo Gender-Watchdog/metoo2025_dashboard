@@ -72,72 +72,99 @@ def extract_view_data(html_content):
     }
 
 def update_counts():
-    if not os.path.exists(MASTER_DB_FILE):
-        logger.error(f"Master DB not found: {MASTER_DB_FILE}")
-        return
-
-    # Load Initial Counts from Source
-    initial_counts = {}
+    # Load Initial Counts and Master DB
+    initial_data = {} # Key: url, Value: dict of row data
+    
+    # 1. Load Seeds (Source of Truth for existence/initials)
     try:
         with open('sources/dc_inside_post_urls.csv', 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
-                val = 0
-                try:
-                    val = int(row.get('initial_count', 0))
-                except:
-                    pass
-                initial_counts[row['english_name']] = val
+                url = row.get('url', '').strip()
+                if url:
+                    initial_data[url] = row
     except Exception as e:
-        logger.warning(f"Could not load initial counts: {e}")
+        logger.error(f"Could not load seed file: {e}")
+        return
 
+    # 2. Load Master DB (Source of Truth for history/status)
+    master_records = {} # Key: url, Value: row
+    if os.path.exists(MASTER_DB_FILE):
+        with open(MASTER_DB_FILE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                url = row.get('url', '').strip()
+                if url:
+                    master_records[url] = row
+    
     updated_rows = []
     json_data = {}
     
-    # Read Master DB
-    with open(MASTER_DB_FILE, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            post_name = row['english_name']
-            url = row['url']
+    # 3. Process ALL URLs (Seeds + Existing Master)
+    # We use the seed list order to keep things organized, but you could use a set of all URLs.
+    # For this dashboard, we process everything in the Master DB + any new ones in Seeds.
+    
+    all_urls = list(master_records.keys())
+    for url in initial_data:
+        if url not in all_urls:
+            all_urls.append(url)
             
-            # Historic Data
-            try:
-                max_views = int(row.get('max_views', 0))
-                current_views = int(row.get('current_views', 0))
-            except:
-                max_views = 0
-                current_views = 0
-            
-            old_status = row.get('status', 'Active')
-            removed_date = row.get('removed_date', '')
+    for url in all_urls:
+        # Get data from Master or Seed
+        master_row = master_records.get(url, {})
+        seed_row = initial_data.get(url, {})
+        
+        # Prefer names from Seed (allows fixing typos in CSV), fallback to Master
+        english_name = seed_row.get('english_name') or master_row.get('english_name', 'Unknown')
+        korean_name = seed_row.get('korean_name') or master_row.get('korean_name', 'Unknown')
+        
+        # Historic Data
+        try:
+            max_views = int(master_row.get('max_views', 0))
+            current_views = int(master_row.get('current_views', 0))
+        except:
+            max_views = 0
+            current_views = 0
+        
+        # Initial Views always from Seed (if available) or persisted Master
+        try:
+            initial_val = int(seed_row.get('initial_count', 0))
+            if initial_val == 0:
+                 # Fallback to master if seed is missing it (rare)
+                 initial_val = int(master_row.get('initial_views', 0)) # Note: Master DB doesn't store initial_views column primarily, but logic below adds it to JSON
+        except bytes:
+            initial_val = 0
 
-            # Scrape
-            logger.info(f"Checking {post_name}...")
+        old_status = master_row.get('status', 'Active')
+        removed_date = master_row.get('removed_date', '')
+
+        # Scrape
+        logger.info(f"Checking {english_name}...")
+        
+        new_status = old_status
+        
+        try:
+            response = requests.get(url, headers=HEADERS, timeout=10)
             
-            new_status = old_status
-            scrape_success = False
+            # Check for redirects to list (soft delete)
+            if 'board/lists' in response.url and 'view' not in response.url:
+                logger.info(f"  -> Redirected to list (Deleted)")
+                new_status = "Removed"
+                current_views = 0 # Reset current for removed
             
-            try:
-                response = requests.get(url, headers=HEADERS, timeout=10)
+            elif response.status_code == 200:
+                data = extract_view_data(response.text)
                 
-                # Check for redirects to list (soft delete)
-                if 'board/lists' in response.url and 'view' not in response.url:
-                    logger.info(f"  -> Redirected to list (Deleted)")
-                    new_status = "Removed"
-                    current_views = 0 # Reset current for removed
-                
-                elif response.status_code == 200:
-                    data = extract_view_data(response.text)
+                if data:
+                    # Success
+                    views = data['views']
                     
-                    if data:
-                        # Success
-                        scrape_success = True
-                        views = data['views']
-                        
-                        # Logic: If views drop to 0, it's weird, but usually implies deletion or error
-                        # But if we got data, we trust it.
-                        
+                    # Logic: Zero views = Removed (User Requirement)
+                    if views == 0:
+                         logger.info(f"  -> 0 Views detected (Marking as Removed)")
+                         new_status = "Removed"
+                         current_views = 0
+                    else:
                         current_views = views
                         if views > max_views:
                             max_views = views
@@ -150,12 +177,12 @@ def update_counts():
                         new_status = "Active"
                         
                         # Update JSON object
-                        json_data[post_name] = {
-                            "name_en": post_name,
-                            "name_kr": row['korean_name'],
+                        json_data[english_name] = {
+                            "name_en": english_name,
+                            "name_kr": korean_name,
                             "current_views": current_views,
                             "max_views": max_views,
-                            "initial_views": initial_counts.get(post_name, 0),
+                            "initial_views": initial_val,
                             "status": new_status,
                             "post_date": post_date,
                             "recs": recs,
@@ -163,53 +190,54 @@ def update_counts():
                             "url": url,
                             "removed_date": ""
                         }
-                    else:
-                        # Valid HTTP but content check failed (Deleted box)
-                        logger.info(f"  -> Content missing (Deleted)")
+                else:
+                    # Valid HTTP but content check failed (Deleted box)
+                    logger.info(f"  -> Content missing (Deleted)")
+                    new_status = "Removed"
+                    current_views = 0
+            else:
+                    logger.warning(f"  -> HTTP {response.status_code}")
+                    if response.status_code == 404:
                         new_status = "Removed"
                         current_views = 0
-                else:
-                     logger.warning(f"  -> HTTP {response.status_code}")
-                     # Should we mark removed on ANY error? Maybe be conservative.
-                     # If it was Active, maybe transient error?
-                     # IF 404, yes removed.
-                     if response.status_code == 404:
-                         new_status = "Removed"
-                         current_views = 0
 
-            except Exception as e:
-                logger.error(f"  -> Error: {e}")
+        except Exception as e:
+            logger.error(f"  -> Error: {e}")
+        
+        # Create/Update Row
+        updated_row = {
+            'english_name': english_name,
+            'korean_name': korean_name,
+            'url': url,
+            'status': new_status,
+            'max_views': max_views,
+            'current_views': current_views,
+            'removed_date': removed_date,
+            'last_updated': datetime.now().strftime('%Y-%m-%d')
+        }
+        
+        # Post-Scrape Logic for Removed
+        if new_status == "Removed":
+            if old_status == "Active" or not removed_date:
+                updated_row['removed_date'] = datetime.now().strftime('%Y-%m-%d')
             
-            # Post-Scrape Logic
-            if new_status == "Removed":
-                if old_status == "Active":
-                    # First time noticed removal
-                    removed_date = datetime.now().strftime('%Y-%m-%d')
-                
-                # For removed posts, output specific JSON structure
-                json_data[post_name] = {
-                            "name_en": post_name,
-                            "name_kr": row['korean_name'],
-                            "current_views": 0,
-                            "max_views": max_views,
-                            "initial_views": initial_counts.get(post_name, 0),
-                            "status": "Removed",
-                            "post_date": row.get('post_date', ''), # Might lose this if not persisted
-                            "recs": 0,
-                            "comments": 0,
-                            "url": url,
-                            "removed_date": removed_date
-                }
-            
-            # Update Row for CSV
-            row['status'] = new_status
-            row['max_views'] = max_views
-            row['current_views'] = current_views
-            row['removed_date'] = removed_date
-            row['last_updated'] = datetime.now().strftime('%Y-%m-%d')
-            
-            updated_rows.append(row)
-            time.sleep(0.5)
+            # For removed posts, output specific JSON structure
+            json_data[english_name] = {
+                        "name_en": english_name,
+                        "name_kr": korean_name,
+                        "current_views": 0,
+                        "max_views": max_views,
+                        "initial_views": initial_val,
+                        "status": "Removed",
+                        "post_date": master_row.get('post_date', ''), 
+                        "recs": 0,
+                        "comments": 0,
+                        "url": url,
+                        "removed_date": updated_row['removed_date']
+            }
+        
+        updated_rows.append(updated_row)
+        time.sleep(0.5) # Be kind to the server
 
     # Write back to CSV
     headers = ['english_name', 'korean_name', 'url', 'status', 'max_views', 'current_views', 'removed_date', 'last_updated']
