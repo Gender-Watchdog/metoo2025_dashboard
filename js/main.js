@@ -106,8 +106,8 @@ function renderTable(data) {
     
     let filteredData = data.filter(item => {
         // Handle field naming variations (name vs english_name)
-        const name = (item.name || item.english_name || '').toLowerCase();
-        const korean = (item.korean_name || '').toLowerCase();
+        const name = (item.name || item.english_name || item.name_en || '').toLowerCase();
+        const korean = (item.korean_name || item.name_kr || '').toLowerCase();
         const title = (item.post_title || '').toLowerCase();
         return name.includes(filterText) || korean.includes(filterText) || title.includes(filterText);
     });
@@ -132,12 +132,12 @@ function renderTable(data) {
                 return curr - init;
             }
             if (field === 'current') return parseInt(item.current_views) || 0;
-            if (field === 'recommend') return parseInt(item.recommendations || item.recommendation_count) || 0;
+            if (field === 'recommend') return parseInt(item.recs || item.recommendations || item.recommendation_count) || 0;
             if (field === 'comment') return parseInt(item.comments || item.comment_count) || 0;
             return 0;
         };
 
-        const getName = (item) => (item.name || item.english_name || '').toLowerCase();
+        const getName = (item) => (item.name || item.english_name || item.name_en || '').toLowerCase();
 
         switch (sortValue) {
             case 'increase-desc': return getVal(b, 'increase') - getVal(a, 'increase');
@@ -178,7 +178,7 @@ function renderTable(data) {
 
         // --- University Columns ---
         const nameCell = document.createElement('td');
-        const englishName = item.name || item.english_name || 'N/A';
+        const englishName = item.name || item.english_name || item.name_en || 'N/A';
         nameCell.textContent = englishName;
         // Tooltip for post date
         if (item.post_date) {
@@ -187,7 +187,7 @@ function renderTable(data) {
         row.appendChild(nameCell);
 
         const koreanCell = document.createElement('td');
-        koreanCell.textContent = item.korean_name || '';
+        koreanCell.textContent = item.korean_name || item.name_kr || '';
         row.appendChild(koreanCell);
 
         // --- Metrics ---
@@ -222,7 +222,7 @@ function renderTable(data) {
 
         // Recs / Comments
         const engagementCell = document.createElement('td');
-        const recs = item.recommendations || item.recommendation_count || 0;
+        const recs = item.recs || item.recommendations || item.recommendation_count || 0;
         const coms = item.comments || item.comment_count || 0;
         engagementCell.innerHTML = `<div><i class="far fa-thumbs-up"></i> ${recs}</div><div><i class="far fa-comment-dots"></i> ${coms}</div>`;
         row.appendChild(engagementCell);
@@ -251,16 +251,20 @@ function renderTable(data) {
     });
 }
 
+function filterTable() {
+    renderTable(universityData);
+}
+
 let viewsChart = null;
 
 function renderChart(data) {
     const ctx = document.getElementById('views-chart');
     if (!ctx) return;
 
-    // Take top 10 from the passed data (which might be sorted/filtered)
-    // Assuming data passed here is already active-only or sorted appropriately
-    const topData = data.slice(0, 10);
-    
+    // Take top 10 from the passed datname_kr || d.korean_name || d.name_en || d.name);
+    const initialData = topData.map(d => parseInt(d.initial_views) || 0);
+    const currentData = topData.map(d => parseInt(d.current_views) || 0);
+    const recsData = topData.map(d => parseInt(d.recs || 
     const labels = topData.map(d => d.korean_name || d.name);
     const initialData = topData.map(d => parseInt(d.initial_views) || 0);
     const currentData = topData.map(d => parseInt(d.current_views) || 0);
