@@ -268,7 +268,6 @@ function renderChart(data) {
     const labels = topData.map(d => d.korean_name || d.name_kr || d.name_en || d.english_name || d.name || 'Unknown');
     const initialData = topData.map(d => parseInt(d.initial_views) || 0);
     const currentData = topData.map(d => parseInt(d.current_views) || 0);
-    const recsData = topData.map(d => parseInt(d.recs || d.recommendations || d.recommendation_count) || 0);
 
     if (viewsChart) {
         viewsChart.destroy();
@@ -292,15 +291,6 @@ function renderChart(data) {
                     backgroundColor: 'rgba(131, 56, 236, 0.6)', 
                     borderColor: 'rgba(131, 56, 236, 1)',
                     borderWidth: 1
-                },
-                {
-                    label: 'Recommendations',
-                    data: recsData,
-                    backgroundColor: 'rgba(255, 0, 110, 0.6)',
-                    borderColor: 'rgba(255, 0, 110, 1)',
-                    borderWidth: 1,
-                    type: 'line',
-                    yAxisID: 'y1'
                 }
             ]
         },
@@ -314,14 +304,6 @@ function renderChart(data) {
                         display: true,
                         text: 'Count'
                     }
-                },
-                y1: {
-                    type: 'linear',
-                    display: false,
-                    position: 'right',
-                    grid: {
-                        drawOnChartArea: false,
-                    },
                 },
                 x: {
                     title: {
