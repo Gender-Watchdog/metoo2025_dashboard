@@ -70,14 +70,14 @@ function renderTable(data, sortField = 'default') {
     });
     
     // Update Stats UI
-    const totalViewsEl = document.querySelector('.total-views h3');
+    const totalViewsEl = document.querySelector('.total-views p');
     if (totalViewsEl) totalViewsEl.textContent = totalViews.toLocaleString();
     
-    const totalIncreaseEl = document.querySelector('.total-increase h3');
+    const totalIncreaseEl = document.querySelector('.total-increase p');
     if (totalIncreaseEl) totalIncreaseEl.textContent = `+${totalIncrease.toLocaleString()}`;
-    if (totalIncrease > 0 && totalIncreaseEl) totalIncreaseEl.style.color = '#bb86fc';
+    if (totalIncrease > 0 && totalIncreaseEl) totalIncreaseEl.style.color = '#8338ec'; // Use tertiary color directly
 
-    const avgIncreaseEl = document.querySelector('.avg-increase h3');
+    const avgIncreaseEl = document.querySelector('.avg-increase p');
     if (avgIncreaseEl) {
         const avg = activePosts > 0 ? (totalIncrease / activePosts).toFixed(1) : 0;
         avgIncreaseEl.textContent = `+${avg}`;
