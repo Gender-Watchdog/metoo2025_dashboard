@@ -261,14 +261,14 @@ function renderChart(data) {
     const ctx = document.getElementById('views-chart');
     if (!ctx) return;
 
-    // Take top 10 from the passed datname_kr || d.korean_name || d.name_en || d.name);
+    // Take top 10 from the passed data (which might be sorted/filtered)
+    // Assuming data passed here is already active-only or sorted appropriately
+    const topData = data.slice(0, 10);
+    
+    const labels = topData.map(d => d.korean_name || d.name_kr || d.name_en || d.english_name || d.name || 'Unknown');
     const initialData = topData.map(d => parseInt(d.initial_views) || 0);
     const currentData = topData.map(d => parseInt(d.current_views) || 0);
-    const recsData = topData.map(d => parseInt(d.recs || 
-    const labels = topData.map(d => d.korean_name || d.name);
-    const initialData = topData.map(d => parseInt(d.initial_views) || 0);
-    const currentData = topData.map(d => parseInt(d.current_views) || 0);
-    const recsData = topData.map(d => parseInt(d.recommendations || d.recommendation_count) || 0);
+    const recsData = topData.map(d => parseInt(d.recs || d.recommendations || d.recommendation_count) || 0);
 
     if (viewsChart) {
         viewsChart.destroy();
