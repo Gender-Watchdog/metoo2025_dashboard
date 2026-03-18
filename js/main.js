@@ -127,9 +127,11 @@ function renderTable(data) {
         // 2. Secondary Sort based on Dropdown
         const getVal = (item, field) => {
             if (field === 'increase') {
-                const curr = parseInt(item.current_views) || 0; 
-                const init = parseInt(item.initial_views) || 0;
-                return curr - init;
+                // Use daily_increase if available, else standard fallback
+                return parseInt(item.daily_increase) || 0;
+            }
+            if (field === 'total_increase') {
+                return parseInt(item.total_increase) || 0;
             }
             if (field === 'current') return parseInt(item.current_views) || 0;
             if (field === 'recommend') return parseInt(item.recs || item.recommendations || item.recommendation_count) || 0;
@@ -210,10 +212,10 @@ function renderTable(data) {
         // Increase
         const increaseCell = document.createElement('td');
         if (item.status === 'Active') {
-            const curr = parseInt(item.current_views) || 0;
-            const init = parseInt(item.initial_views) || 0;
-            const inc = curr - init;
+            const daily = parseInt(item.daily_increase) || 0;
+            const inc = daily; // Use daily increase
             increaseCell.textContent = `+${inc.toLocaleString()}`;
+            increaseCell.title = `Total Increase: +${(parseInt(item.total_increase) || 0).toLocaleString()}`;
             if (inc > 0) increaseCell.style.color = '#8338ec'; // Tertiary
         } else {
             increaseCell.textContent = '-';

@@ -121,18 +121,19 @@ def update_counts():
         # Historic Data
         try:
             max_views = int(master_row.get('max_views', 0))
-            current_views = int(master_row.get('current_views', 0))
+            # New Logic: Historic 'current' becomes today's 'previous'
+            previous_views = int(master_row.get('current_views', 0))
         except:
             max_views = 0
-            current_views = 0
+            previous_views = 0
         
         # Initial Views always from Seed (if available) or persisted Master
         try:
             initial_val = int(seed_row.get('initial_count', 0))
             if initial_val == 0:
                  # Fallback to master if seed is missing it (rare)
-                 initial_val = int(master_row.get('initial_views', 0)) # Note: Master DB doesn't store initial_views column primarily, but logic below adds it to JSON
-        except bytes:
+                 initial_val = int(master_row.get('initial_views', 0))
+        except (ValueError, TypeError):
             initial_val = 0
 
         old_status = master_row.get('status', 'Active')
@@ -142,6 +143,7 @@ def update_counts():
         logger.info(f"Checking {english_name}...")
         
         new_status = old_status
+        current_views = 0 # Default before check
         
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
@@ -150,7 +152,7 @@ def update_counts():
             if 'board/lists' in response.url and 'view' not in response.url:
                 logger.info(f"  -> Redirected to list (Deleted)")
                 new_status = "Removed"
-                current_views = 0 # Reset current for removed
+                current_views = 0 
             
             elif response.status_code == 200:
                 data = extract_view_data(response.text)
@@ -176,11 +178,24 @@ def update_counts():
                         
                         new_status = "Active"
                         
+                        # Calculate Increases
+                        daily_increase = current_views - previous_views
+                        # Handle edge case where previous was 0 (newly added or previously removed)
+                        if previous_views == 0 and current_views > 0:
+                            daily_increase = current_views - initial_val # First day increase
+                            if daily_increase < 0: daily_increase = 0
+
+                        total_increase = current_views - initial_val
+                        if total_increase < 0: total_increase = 0
+
                         # Update JSON object
                         json_data[english_name] = {
                             "name_en": english_name,
                             "name_kr": korean_name,
                             "current_views": current_views,
+                            "previous_views": previous_views,
+                            "daily_increase": daily_increase,
+                            "total_increase": total_increase,
                             "max_views": max_views,
                             "initial_views": initial_val,
                             "status": new_status,
@@ -226,6 +241,9 @@ def update_counts():
                         "name_en": english_name,
                         "name_kr": korean_name,
                         "current_views": 0,
+                        "previous_views": previous_views,
+                        "daily_increase": 0,
+                        "total_increase": 0,
                         "max_views": max_views,
                         "initial_views": initial_val,
                         "status": "Removed",
