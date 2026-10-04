@@ -160,30 +160,37 @@ def update_counts():
                 if data:
                     # Success
                     views = data['views']
-                    
-                    # Logic: Zero views = Removed (User Requirement)
+
+                    # 0 views on a valid 200 page means the counter wasn't rendered
+                    # (transient DC Inside issue) — keep the last known count, don't mark Removed.
+                    # Real deletions are caught by redirect-to-list, 404, or the deleted-box HTML.
                     if views == 0:
-                         logger.info(f"  -> 0 Views detected (Marking as Removed)")
-                         new_status = "Removed"
-                         current_views = 0
+                        logger.warning(f"  -> 0 views on live page; keeping previous count ({previous_views})")
+                        current_views = previous_views
                     else:
                         current_views = views
-                        if views > max_views:
-                            max_views = views
-                        
-                        # Use other metrics
-                        recs = data['recs']
-                        comments = data['comments']
-                        post_date = data['post_date']
-                        
-                        new_status = "Active"
-                        
-                        # Calculate Increases
-                        daily_increase = current_views - previous_views
-                        # Handle edge case where previous was 0 (newly added or previously removed)
-                        if previous_views == 0 and current_views > 0:
-                            daily_increase = current_views - initial_val # First day increase
-                            if daily_increase < 0: daily_increase = 0
+
+                    if current_views > max_views and current_views > 0:
+                        max_views = current_views
+
+                    # Use other metrics
+                    recs = data['recs']
+                    comments = data['comments']
+                    post_date = data['post_date']
+
+                    new_status = "Active"
+
+                    if old_status == "Removed":
+                        logger.info(f"  -> Restored: was Removed, now Active again")
+                        removed_date = ''  # clear false removal record
+
+                    # Calculate Increases
+                    daily_increase = current_views - previous_views
+                    if old_status == "Removed":
+                        daily_increase = 0  # restored post — no meaningful daily delta
+                    elif previous_views == 0 and current_views > 0:
+                        daily_increase = current_views - initial_val  # genuinely new post, first day
+                        if daily_increase < 0: daily_increase = 0
 
                         total_increase = current_views - initial_val
                         if total_increase < 0: total_increase = 0
