@@ -30,7 +30,7 @@ def extract_view_data(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     
     # Check for deletion/redirection first
-    if soup.find('div', class_='box_infoview delete') or "sh_list_title" in str(soup):
+    if soup.find('div', class_='delet_wrap') or "sh_list_title" in str(soup):
          return None # Signals deleted
 
     view_count = 0

@@ -193,9 +193,9 @@ function renderTable(data) {
         row.appendChild(koreanCell);
 
         // --- Metrics ---
-        // Initial Views (Historical Context)
+        // Previous day's views
         const initCell = document.createElement('td');
-        initCell.textContent = (parseInt(item.initial_views) || 0).toLocaleString();
+        initCell.textContent = (parseInt(item.previous_views) || 0).toLocaleString();
         row.appendChild(initCell);
 
         // Current Views
