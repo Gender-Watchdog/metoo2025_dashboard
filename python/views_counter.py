@@ -192,26 +192,25 @@ def update_counts():
                         daily_increase = current_views - initial_val  # genuinely new post, first day
                         if daily_increase < 0: daily_increase = 0
 
-                        total_increase = current_views - initial_val
-                        if total_increase < 0: total_increase = 0
+                    total_increase = current_views - initial_val
+                    if total_increase < 0: total_increase = 0
 
-                        # Update JSON object
-                        json_data[english_name] = {
-                            "name_en": english_name,
-                            "name_kr": korean_name,
-                            "current_views": current_views,
-                            "previous_views": previous_views,
-                            "daily_increase": daily_increase,
-                            "total_increase": total_increase,
-                            "max_views": max_views,
-                            "initial_views": initial_val,
-                            "status": new_status,
-                            "post_date": post_date,
-                            "recs": recs,
-                            "comments": comments,
-                            "url": url,
-                            "removed_date": ""
-                        }
+                    json_data[english_name] = {
+                        "name_en": english_name,
+                        "name_kr": korean_name,
+                        "current_views": current_views,
+                        "previous_views": previous_views,
+                        "daily_increase": daily_increase,
+                        "total_increase": total_increase,
+                        "max_views": max_views,
+                        "initial_views": initial_val,
+                        "status": new_status,
+                        "post_date": post_date,
+                        "recs": recs,
+                        "comments": comments,
+                        "url": url,
+                        "removed_date": ""
+                    }
                 else:
                     # Valid HTTP but content check failed (Deleted box)
                     logger.info(f"  -> Content missing (Deleted)")
